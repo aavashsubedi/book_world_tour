@@ -7,40 +7,19 @@
 <style>
   :root {
     color-scheme: light;
-    --page:           #f9f9f7;
-    --surface-1:      #fcfcfb;
+    --page:           #ffffff;
+    --surface-1:      #ffffff;
     --text-primary:   #0b0b0b;
     --text-secondary: #52514e;
     --text-muted:     #898781;
-    --border:         rgba(11,11,11,0.10);
-    --unread:         #e7e6e0;
+    --border:         rgba(11,11,11,0.12);
+    --hover:          rgba(11,11,11,0.05);
+    --unread:         #e9e7e1;
     --seq-1: #9ec5f4;
     --seq-2: #6da7ec;
     --seq-3: #3987e5;
     --seq-4: #256abf;
     --seq-5: #104281;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      color-scheme: dark;
-      --page:           #0d0d0d;
-      --surface-1:      #1a1a19;
-      --text-primary:   #ffffff;
-      --text-secondary: #c3c2b7;
-      --text-muted:     #898781;
-      --border:         rgba(255,255,255,0.10);
-      --unread:         #262624;
-    }
-  }
-  :root[data-theme="dark"] {
-    color-scheme: dark;
-    --page:           #0d0d0d;
-    --surface-1:      #1a1a19;
-    --text-primary:   #ffffff;
-    --text-secondary: #c3c2b7;
-    --text-muted:     #898781;
-    --border:         rgba(255,255,255,0.10);
-    --unread:         #262624;
   }
 
   * { margin: 0; box-sizing: border-box; }
@@ -65,32 +44,82 @@
     font-weight: 700;
     margin-right: auto;
   }
+  .stats { display: flex; gap: 26px; margin-left: auto; }
   header h1 span { color: var(--text-muted); font-weight: 400; }
 
-  #people {
-    display: flex;
-    gap: 4px;
-    background: var(--surface-1);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 3px;
-  }
-  #people button {
-    border: none;
-    background: none;
-    color: var(--text-secondary);
-    font: inherit;
-    font-size: 13px;
-    padding: 5px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  #people button:hover { color: var(--text-primary); }
-  #people button.active {
+  /* Profile switcher — collapsed to an avatar, menu opens on click */
+  #profile { position: relative; }
+  .avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
     background: var(--seq-3);
     color: #fff;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    user-select: none;
   }
+  #profile-btn {
+    border: none;
+    background: none;
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    transition: box-shadow 0.12s;
+  }
+  #profile-btn:hover, #profile-btn[aria-expanded="true"] {
+    box-shadow: 0 0 0 2px var(--border);
+  }
+  #profile-btn:focus-visible { outline: 2px solid var(--seq-4); outline-offset: 2px; }
+
+  #profile-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 190px;
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(11,11,11,0.12);
+    padding: 6px;
+    z-index: 30;
+  }
+  #profile-menu[hidden] { display: none; }
+  #profile-menu .menu-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    padding: 4px 10px 6px;
+  }
+  #profile-menu button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: none;
+    font: inherit;
+    font-size: 14px;
+    color: var(--text-primary);
+    text-align: left;
+    padding: 7px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #profile-menu button:hover { background: var(--hover); }
+  #profile-menu .avatar { width: 26px; height: 26px; font-size: 12px; }
+  #profile-menu .check {
+    margin-left: auto;
+    color: var(--seq-4);
+    font-weight: 700;
+    visibility: hidden;
+  }
+  #profile-menu button.active .check { visibility: visible; }
 
   .tile { text-align: right; }
   .tile .value { font-size: 26px; font-weight: 700; line-height: 1.1; }
@@ -139,7 +168,7 @@
     background: var(--surface-1);
     border: 1px solid var(--border);
     border-radius: 8px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    box-shadow: 0 4px 14px rgba(11,11,11,0.12);
     padding: 10px 12px;
     font-size: 12px;
     max-width: 280px;
@@ -164,19 +193,26 @@
 </head>
 <body>
 <header>
+  <div id="profile" hidden>
+    <button id="profile-btn" aria-haspopup="menu" aria-expanded="false" aria-label="Switch person">
+      <span class="avatar" id="profile-initial"></span>
+    </button>
+    <div id="profile-menu" role="menu" hidden></div>
+  </div>
   <h1>📚 Book World Tour <span>— where your reading has taken you</span></h1>
-  <nav id="people" hidden></nav>
-  <div class="tile">
-    <div class="value" id="stat-countries">–<small> / 195</small></div>
-    <div class="label">countries</div>
-  </div>
-  <div class="tile">
-    <div class="value" id="stat-books">–</div>
-    <div class="label">books</div>
-  </div>
-  <div class="tile">
-    <div class="value" id="stat-authors">–</div>
-    <div class="label">authors</div>
+  <div class="stats">
+    <div class="tile">
+      <div class="value" id="stat-countries">–<small> / 195</small></div>
+      <div class="label">countries</div>
+    </div>
+    <div class="tile">
+      <div class="value" id="stat-books">–</div>
+      <div class="label">books</div>
+    </div>
+    <div class="tile">
+      <div class="value" id="stat-authors">–</div>
+      <div class="label">authors</div>
+    </div>
   </div>
 </header>
 
@@ -217,20 +253,44 @@
     } catch (e) { /* ignore bad src, fall back to local data */ }
   }
 
-  // Person switcher (top left)
-  const nav = document.getElementById("people");
+  // Profile switcher (top left) — collapsed to an avatar until clicked
   if (people.length > 1 && !src) {
-    nav.hidden = false;
-    for (const p of people) {
-      const btn = document.createElement("button");
-      btn.textContent = p.name;
-      if (p.id === personId) btn.classList.add("active");
-      btn.onclick = () => {
-        localStorage.setItem("bwt-person", p.id);
-        location.href = location.pathname + "?u=" + encodeURIComponent(p.id);
-      };
-      nav.appendChild(btn);
-    }
+    const profile = document.getElementById("profile");
+    const btn = document.getElementById("profile-btn");
+    const menu = document.getElementById("profile-menu");
+    // Categorical hues, assigned by position — two people whose names share an
+    // initial still read as distinct.
+    const hues = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100",
+                  "#e87ba4", "#008300", "#4a3aa7", "#e34948"];
+    const hueOf = p => hues[people.indexOf(p) % hues.length];
+
+    const current = people.find(p => p.id === personId);
+    const initial = document.getElementById("profile-initial");
+    initial.textContent = current.name[0];
+    initial.style.background = hueOf(current);
+    profile.hidden = false;
+
+    menu.innerHTML = `<div class="menu-label">Whose map?</div>` +
+      people.map(p =>
+        `<button role="menuitem" data-id="${p.id}"${p.id === personId ? ' class="active"' : ""}>` +
+          `<span class="avatar" style="background:${hueOf(p)}">${p.name[0]}</span>` +
+          `${p.name}<span class="check">✓</span>` +
+        `</button>`
+      ).join("");
+
+    const setOpen = open => {
+      menu.hidden = !open;
+      btn.setAttribute("aria-expanded", String(open));
+    };
+    btn.onclick = e => { e.stopPropagation(); setOpen(menu.hidden); };
+    menu.onclick = e => {
+      const item = e.target.closest("button[data-id]");
+      if (!item) return;
+      localStorage.setItem("bwt-person", item.dataset.id);
+      location.href = location.pathname + "?u=" + encodeURIComponent(item.dataset.id);
+    };
+    document.addEventListener("click", () => setOpen(false));
+    document.addEventListener("keydown", e => { if (e.key === "Escape") setOpen(false); });
   }
 
   const [world, payload] = await Promise.all([
