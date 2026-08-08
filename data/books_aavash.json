@@ -1,13 +1,13 @@
 {
-  "generated": "2026-08-08T10:45:30Z",
+  "generated": "2026-08-08T15:27:24Z",
   "person": "Aavash",
   "books": [
     {
       "title": "The Odyssey",
       "author": "Homer",
       "date_read": "2026-08-07",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Stoner",
@@ -31,6 +31,13 @@
       "iso_n3": "643"
     },
     {
+      "title": "The Master and Margarita",
+      "author": "Mikhail Bulgakov",
+      "date_read": "2026-02-22",
+      "country": null,
+      "iso_n3": null
+    },
+    {
       "title": "The Dream of a Ridiculous Man",
       "author": "Fyodor Dostoevsky",
       "date_read": "2026-01-11",
@@ -45,18 +52,53 @@
       "iso_n3": "643"
     },
     {
+      "title": "The Death of Ivan Ilych",
+      "author": "Leo Tolstoy",
+      "date_read": "2025-12-31",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
       "title": "Art History: A Very Short Introduction",
       "author": "Dana Arnold",
       "date_read": "2025-12-30",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Of Mice and Men",
+      "author": "John Steinbeck",
+      "date_read": "2025-12-21",
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Siddhartha",
       "author": "Hermann Hesse",
       "date_read": "2025-12-02",
-      "country": null,
-      "iso_n3": null
+      "country": "Switzerland",
+      "iso_n3": "756"
+    },
+    {
+      "title": "Flowers for Algernon",
+      "author": "Daniel Keyes",
+      "date_read": "2025-12-01",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "date_read": "2025-11-16",
+      "country": "Czechoslovakia",
+      "iso_n3": "203"
+    },
+    {
+      "title": "The Will of the Many (Hierarchy, #1)",
+      "author": "James Islington",
+      "date_read": "2025-01-07",
+      "country": "Australia",
+      "iso_n3": "036"
     },
     {
       "title": "The Spy and the Traitor: The Greatest Espionage Story of the Cold War",
@@ -64,6 +106,13 @@
       "date_read": "2024-06-01",
       "country": "United Kingdom",
       "iso_n3": "826"
+    },
+    {
+      "title": "The Dark Forest (The Three-Body Problem, #2)",
+      "author": "Liu Cixin",
+      "date_read": "2024-01-01",
+      "country": "People's Republic of China",
+      "iso_n3": "156"
     },
     {
       "title": "Morning Star (Red Rising Saga, #3)",
@@ -97,8 +146,8 @@
       "title": "Macbeth: Moment by Moment",
       "author": "William Shakespeare",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "The Hunger Games (The Hunger Games, #1)",
@@ -120,6 +169,20 @@
       "date_read": null,
       "country": "Austria",
       "iso_n3": "040"
+    },
+    {
+      "title": "The Strange Case of Dr. Jekyll and Mr. Hyde and Other Tales of Terror",
+      "author": "Robert Louis Stevenson",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Stranger",
+      "author": "Albert Camus",
+      "date_read": null,
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Animal Farm",
@@ -216,8 +279,8 @@
       "title": "Thinking, Fast and Slow",
       "author": "Daniel Kahneman",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Men Are from Mars, Women Are from Venus",

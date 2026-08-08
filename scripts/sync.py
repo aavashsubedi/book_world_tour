@@ -31,10 +31,19 @@ CONFIG_PATH = os.path.join(ROOT, "config.json")
 USER_AGENT = "BookWorldTour/1.0 (personal reading-map project; github.com)"
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
 
+# Historical states -> their modern map successor (world-atlas has only current codes)
+HISTORICAL_ISO = {
+    "810": "643",  # Soviet Union -> Russia
+    "200": "203",  # Czechoslovakia -> Czechia
+    "890": "688",  # Yugoslavia -> Serbia
+    "278": "276",  # East Germany -> Germany
+    "280": "276",  # West Germany -> Germany
+}
+
 
 def http_get_json(url, headers=None, data=None, timeout=30):
     """GET/POST JSON with retry + backoff (Wikidata 429s on bursts)."""
-    for attempt, backoff in enumerate((5, 15, 30, 0)):
+    for attempt, backoff in enumerate((15, 40, 70, 0)):
         try:
             req = urllib.request.Request(
                 url, data=data, headers={"User-Agent": USER_AGENT, **(headers or {})})
@@ -120,44 +129,38 @@ def load_rss(rss_url):
 
 # ------------------------------------------------------------ country resolvers
 
-def wikidata_entity_claims(entity_id, prop):
-    data = http_get_json(
-        f"{WIKIDATA_API}?action=wbgetclaims&entity={entity_id}&property={prop}&format=json"
-    )
-    return data.get("claims", {}).get(prop, [])
-
-
 def wikidata_resolve_author(author):
-    """Return {'country', 'iso_n3', 'source'} or None."""
+    """Return {'country', 'iso_n3', 'source'} or None.
+
+    Single SPARQL query: search the name, keep humans (P31 Q5), take their
+    country of citizenship (P27) and its ISO 3166-1 numeric code (P299).
+    """
+    sparql = """
+    SELECT ?countryLabel ?iso WHERE {
+      SERVICE wikibase:mwapi {
+        bd:serviceParam wikibase:endpoint "www.wikidata.org";
+                        wikibase:api "EntitySearch";
+                        mwapi:search %s;
+                        mwapi:language "en".
+        ?item wikibase:apiOutputItem mwapi:item.
+        ?ordinal wikibase:apiOrdinal true.
+      }
+      ?item wdt:P31 wd:Q5; wdt:P27 ?country.
+      ?country wdt:P299 ?iso.
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+    } ORDER BY ASC(?ordinal) LIMIT 1
+    """ % json.dumps(author)
     try:
-        search = http_get_json(
-            f"{WIKIDATA_API}?action=wbsearchentities&format=json&language=en&type=item&limit=3&search="
-            + urllib.parse.quote(author)
+        data = http_get_json(
+            "https://query.wikidata.org/sparql?format=json&query="
+            + urllib.parse.quote(sparql),
+            headers={"Accept": "application/sparql-results+json"},
         )
-        for hit in search.get("search", []):
-            qid = hit["id"]
-            desc = (hit.get("description") or "").lower()
-            # Prefer hits that look like people/writers; skip obvious non-humans
-            if desc and not any(w in desc for w in
-                                ("writer", "author", "novelist", "poet", "journalist",
-                                 "philosopher", "historian", "essayist", "playwright",
-                                 "born", "person", "professor", "academic")):
-                continue
-            claims = wikidata_entity_claims(qid, "P27")  # country of citizenship
-            if not claims:
-                continue
-            country_qid = claims[0]["mainsnak"]["datavalue"]["value"]["id"]
-            ent = http_get_json(
-                f"{WIKIDATA_API}?action=wbgetentities&ids={country_qid}"
-                "&props=labels|claims&languages=en&format=json"
-            )["entities"][country_qid]
-            label = ent["labels"]["en"]["value"]
-            iso = None
-            for c in ent.get("claims", {}).get("P299", []):  # ISO 3166-1 numeric
-                iso = c["mainsnak"]["datavalue"]["value"]
-                break
-            if iso:
-                return {"country": label, "iso_n3": iso.zfill(3), "source": "wikidata"}
+        rows = data["results"]["bindings"]
+        if rows:
+            return {"country": rows[0]["countryLabel"]["value"],
+                    "iso_n3": rows[0]["iso"]["value"].zfill(3),
+                    "source": "wikidata"}
     except Exception as e:
         print(f"  wikidata error for {author}: {e}", file=sys.stderr)
     return None
@@ -221,6 +224,8 @@ def resolve_authors(books, cache):
     for author in unresolved:
         sample_title = next(b["title"] for b in books if b["author"] == author)
         result = wikidata_resolve_author(author) or gemini_resolve_author(author, sample_title)
+        if result:
+            result["iso_n3"] = HISTORICAL_ISO.get(result["iso_n3"], result["iso_n3"])
         cache[author] = result or {"country": None, "iso_n3": None, "source": "unresolved"}
         print(f"  {author} -> {cache[author]['country']} ({cache[author]['source']})")
         time.sleep(1.5)  # be polite to the APIs

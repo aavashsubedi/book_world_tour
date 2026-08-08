@@ -1,0 +1,706 @@
+{
+  "generated": "2026-08-08T15:27:28Z",
+  "person": "Alex",
+  "books": [
+    {
+      "title": "Pădureanca",
+      "author": "Ioan Slavici",
+      "date_read": "2026-08-06",
+      "country": "Romania",
+      "iso_n3": "642"
+    },
+    {
+      "title": "The Savage Detectives",
+      "author": "Roberto Bolaño",
+      "date_read": "2026-07-29",
+      "country": "Chile",
+      "iso_n3": "152"
+    },
+    {
+      "title": "Rebarbor",
+      "author": "Alexandru Monciu-Sudinski",
+      "date_read": "2026-07-13",
+      "country": "Sweden",
+      "iso_n3": "752"
+    },
+    {
+      "title": "Bad Habit",
+      "author": "Alana S. Portero",
+      "date_read": "2026-07-10",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "\"Disent les imbéciles\"",
+      "author": "Nathalie Sarraute",
+      "date_read": "2026-07-08",
+      "country": "France",
+      "iso_n3": "250"
+    },
+    {
+      "title": "Jacob's Room",
+      "author": "Virginia Woolf",
+      "date_read": "2026-07-08",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Taiwan Travelogue",
+      "author": "Yáng Shuāng-zǐ",
+      "date_read": "2026-07-06",
+      "country": "Taiwan",
+      "iso_n3": "158"
+    },
+    {
+      "title": "Été",
+      "author": "Edith Wharton",
+      "date_read": "2026-07-02",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Grief Lessons: Four Plays by Euripides (New York Review Books Classics)",
+      "author": "Euripides",
+      "date_read": "2026-07-01",
+      "country": "Greece",
+      "iso_n3": "300"
+    },
+    {
+      "title": "Granta 175: Scandinavia (The Magazine of New Writing)",
+      "author": "Thomas Meaney",
+      "date_read": "2026-06-28",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Notre part de nuit",
+      "author": "Mariana Enriquez",
+      "date_read": "2026-06-24",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Dix heures et demie du soir en été",
+      "author": "Marguerite Duras",
+      "date_read": "2026-06-23",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Mother Mary Comes to Me",
+      "author": "Arundhati Roy",
+      "date_read": "2026-06-19",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "My Mother Laughs",
+      "author": "Chantal Akerman",
+      "date_read": "2026-06-15",
+      "country": "Belgium",
+      "iso_n3": "056"
+    },
+    {
+      "title": "A Sentimental Journey",
+      "author": "Laurence Sterne",
+      "date_read": "2026-06-01",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Stoner",
+      "author": "John Williams",
+      "date_read": "2026-05-29",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "MELANCOLIA",
+      "author": "Mircea Cărtărescu",
+      "date_read": "2026-05-28",
+      "country": "Romania",
+      "iso_n3": "642"
+    },
+    {
+      "title": "Om udregning af rumfang IV",
+      "author": "Solvej Balle",
+      "date_read": "2026-04-26",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "If Not, Winter: Fragments of Sappho (Vintage Contemporaries)",
+      "author": "Sappho",
+      "date_read": "2026-04-25",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "La Porte",
+      "author": "Magda Szabó",
+      "date_read": "2026-04-11",
+      "country": "Hungary",
+      "iso_n3": "348"
+    },
+    {
+      "title": "The Beauty of the Husband: A Fictional Essay in 29 Tangos",
+      "author": "Anne Carson",
+      "date_read": "2026-03-30",
+      "country": "Canada",
+      "iso_n3": "124"
+    },
+    {
+      "title": "The Complete Poems",
+      "author": "Constantinos P. Cavafy",
+      "date_read": "2026-03-30",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Agnès",
+      "author": "Peter Stamm",
+      "date_read": "2026-03-12",
+      "country": "Switzerland",
+      "iso_n3": "756"
+    },
+    {
+      "title": "La trilogie de Copenhague: Enfance - Jeunesse - Dépendance",
+      "author": "Tove Ditlevsen",
+      "date_read": "2026-03-11",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "James",
+      "author": "Percival Everett",
+      "date_read": "2026-03-01",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Jour de ressac",
+      "author": "Maylis de Kerangal",
+      "date_read": "2026-02-28",
+      "country": "France",
+      "iso_n3": "250"
+    },
+    {
+      "title": "Om udregning af rumfang III",
+      "author": "Solvej Balle",
+      "date_read": "2026-02-27",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "The Waves",
+      "author": "Virginia Woolf",
+      "date_read": "2026-02-14",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Seyvoz",
+      "author": "Maylis de Kerangal",
+      "date_read": "2025-10-16",
+      "country": "France",
+      "iso_n3": "250"
+    },
+    {
+      "title": "Monstrul fericit",
+      "author": "Radu Vancu",
+      "date_read": "2025-04-25",
+      "country": "Romania",
+      "iso_n3": "642"
+    },
+    {
+      "title": "Kick the Latch",
+      "author": "Kathryn Scanlan",
+      "date_read": "2025-04-24",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Magnolia",
+      "author": "Luca Ștefan Ouatu",
+      "date_read": "2025-04-24",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Om udregning af rumfang II",
+      "author": "Solvej Balle",
+      "date_read": "2025-04-23",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Zenobia",
+      "author": "Gellu Naum",
+      "date_read": "2025-04-15",
+      "country": "Romania",
+      "iso_n3": "642"
+    },
+    {
+      "title": "Orbitor. Aripa stângă",
+      "author": "Mircea Cărtărescu",
+      "date_read": "2025-04-13",
+      "country": "Romania",
+      "iso_n3": "642"
+    },
+    {
+      "title": "On the Calculation of Volume I",
+      "author": "Solvej Balle",
+      "date_read": "2025-04-12",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Lincoln in the Bardo",
+      "author": "George Saunders",
+      "date_read": "2025-04-10",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Cartea Mironei",
+      "author": "Cella Serghi",
+      "date_read": "2025-04-08",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Șopârla din groapa comună",
+      "author": "Nora Iuga",
+      "date_read": "2025-04-08",
+      "country": "Romania",
+      "iso_n3": "642"
+    },
+    {
+      "title": "Floarea de menghină",
+      "author": "Svetlana Cârstean",
+      "date_read": "2025-04-08",
+      "country": "Romania",
+      "iso_n3": "642"
+    },
+    {
+      "title": "Gravitație",
+      "author": "Svetlana Cârstean",
+      "date_read": "2025-04-08",
+      "country": "Romania",
+      "iso_n3": "642"
+    },
+    {
+      "title": "Une soif d'amour",
+      "author": "Yukio Mishima",
+      "date_read": "2025-04-08",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "H.D. - Selected Poems",
+      "author": "H.D.",
+      "date_read": "2025-02-06",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Esperando Bojangles",
+      "author": "Olivier Bourdeaut",
+      "date_read": "2025-02-06",
+      "country": "France",
+      "iso_n3": "250"
+    },
+    {
+      "title": "Stories and Essays of Mina Loy (British Literature)",
+      "author": "Mina Loy",
+      "date_read": "2025-01-23",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Moderato cantabile",
+      "author": "Marguerite Duras",
+      "date_read": "2025-01-15",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "The Comfort Book",
+      "author": "Matt Haig",
+      "date_read": "2025-01-14",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Peace Of Wild Things",
+      "author": "Wendell Berry",
+      "date_read": "2025-01-13",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "With My Back to the World: Poems",
+      "author": "Victoria Chang",
+      "date_read": "2025-01-13",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Blue Eyes, Black Hair",
+      "author": "Marguerite Duras",
+      "date_read": "2025-01-13",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Țigan țăndări",
+      "author": "Valeriu Nicolae",
+      "date_read": "2023-09-03",
+      "country": "Romania",
+      "iso_n3": "642"
+    },
+    {
+      "title": "Pânza de păianjen",
+      "author": "Cella Serghi",
+      "date_read": "2023-09-03",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Hag: Forgotten Folktales Retold",
+      "author": "Daisy Johnson",
+      "date_read": "2023-01-25",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "High Wire Darlings",
+      "author": "Kalyn Roseanne Livernois",
+      "date_read": "2022-12-04",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "They Both Die at the End (They Both Die at the End, #1)",
+      "author": "Adam Silvera",
+      "date_read": "2022-08-04",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Scarlet Letter",
+      "author": "Nathaniel Hawthorne",
+      "date_read": "2022-01-16",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Between Two Kingdoms: A Memoir of a Life Interrupted",
+      "author": "Suleika Jaouad",
+      "date_read": "2022-01-10",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Lettres du Père Noël",
+      "author": "J.R.R. Tolkien",
+      "date_read": "2021-12-24",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Cost of Living (Living Autobiography #2)",
+      "author": "Deborah Levy",
+      "date_read": "2021-11-27",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Selected Stories",
+      "author": "Katherine Mansfield",
+      "date_read": "2021-11-15",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "The Bloody Chamber and Other Stories",
+      "author": "Angela Carter",
+      "date_read": "2021-11-15",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The World's Wife",
+      "author": "Carol Ann Duffy",
+      "date_read": "2021-10-04",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Maurice",
+      "author": "E.M. Forster",
+      "date_read": "2021-08-25",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Les Garçons de l'été",
+      "author": "Rebecca Lighieri",
+      "date_read": "2021-08-20",
+      "country": "France",
+      "iso_n3": "250"
+    },
+    {
+      "title": "De profundis",
+      "author": "Oscar Wilde",
+      "date_read": "2021-08-04",
+      "country": "Ireland",
+      "iso_n3": "372"
+    },
+    {
+      "title": "About Grace",
+      "author": "Anthony Doerr",
+      "date_read": "2021-07-20",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Noi, copiii din Bahnhof Zoo",
+      "author": "Christiane V. Felscherinow",
+      "date_read": "2021-06-27",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Les Optimistes",
+      "author": "Rebecca Makkai",
+      "date_read": "2021-06-24",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Eu și Marley",
+      "author": "John Grogan",
+      "date_read": "2021-06-20",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Caragiale: scrisoarea pierdută",
+      "author": "Bogdan-Alexandru Stănescu",
+      "date_read": "2021-06-14",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Mort sur le Nil (Hercule Poirot, #18)",
+      "author": "Agatha Christie",
+      "date_read": "2021-06-11",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Mythos - The Greek Myths Retold (Stephen Fry's Great Mythology, #1)",
+      "author": "Stephen Fry",
+      "date_read": "2021-06-06",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Hortensia Papadat-Bengescu: străina",
+      "author": "Ana Maria Sandu",
+      "date_read": "2021-06-05",
+      "country": "Romania",
+      "iso_n3": "642"
+    },
+    {
+      "title": "Le Bal des folles",
+      "author": "Victoria Mas",
+      "date_read": "2021-06-01",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Fight Club",
+      "author": "Chuck Palahniuk",
+      "date_read": "2021-05-25",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "La tresse",
+      "author": "Laetitia Colombani",
+      "date_read": "2021-05-24",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "The Overstory",
+      "author": "Richard Powers",
+      "date_read": "2021-04-25",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Go Tell It on the Mountain",
+      "author": "James Baldwin",
+      "date_read": "2021-04-18",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Zazie dans le métro",
+      "author": "Raymond Queneau",
+      "date_read": "2021-04-15",
+      "country": "France",
+      "iso_n3": "250"
+    },
+    {
+      "title": "Neortodox. Scandalul pe care l-am provocat renunțând la rădăcinile mele hasidice",
+      "author": "Deborah Feldman",
+      "date_read": "2021-04-12",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Le Parfum",
+      "author": "Patrick Süskind",
+      "date_read": "2021-03-31",
+      "country": "Germany",
+      "iso_n3": "276"
+    },
+    {
+      "title": "My Ántonia",
+      "author": "Willa Cather",
+      "date_read": "2021-03-11",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Call It Sleep",
+      "author": "Henry Roth",
+      "date_read": "2021-03-01",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Fire Next Time (Vintage International)",
+      "author": "James Baldwin",
+      "date_read": "2021-02-15",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Poems",
+      "author": "Maya Angelou",
+      "date_read": "2021-02-15",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "If Beale Street Could Talk",
+      "author": "James Baldwin",
+      "date_read": "2021-02-13",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Il est grand temps de rallumer les étoiles",
+      "author": "Virginie Grimaldi",
+      "date_read": "2021-02-04",
+      "country": "France",
+      "iso_n3": "250"
+    },
+    {
+      "title": "His Last Bow: Some Reminiscences of Sherlock Holmes (Dover Thrift Editions: Crime/Mystery/Thrillers)",
+      "author": "Arthur Conan Doyle",
+      "date_read": "2020-06-29",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Poésies",
+      "author": "Stéphane Mallarmé",
+      "date_read": "2020-03-05",
+      "country": "France",
+      "iso_n3": "250"
+    },
+    {
+      "title": "Milarepa",
+      "author": "Éric-Emmanuel Schmitt",
+      "date_read": "2018-06-01",
+      "country": "Belgium",
+      "iso_n3": "056"
+    },
+    {
+      "title": "Domnișoara Christina. Șarpele",
+      "author": "Mircea Eliade",
+      "date_read": "2018-04-25",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Mic dejun la Tiffany",
+      "author": "Truman Capote",
+      "date_read": "2018-03-02",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Agonie și extaz (volumul 1)",
+      "author": "Irving Stone",
+      "date_read": "2017-11-08",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Măștile fricii",
+      "author": "Camelia Cavadia",
+      "date_read": "2017-06-17",
+      "country": "Romania",
+      "iso_n3": "642"
+    },
+    {
+      "title": "Povestaşul",
+      "author": "Mario Vargas Llosa",
+      "date_read": "2017-04-13",
+      "country": "Spain",
+      "iso_n3": "724"
+    },
+    {
+      "title": "Palatul de gheață. Sămânța",
+      "author": "Tarjei Vesaas",
+      "date_read": "2017-01-23",
+      "country": "Norway",
+      "iso_n3": "578"
+    },
+    {
+      "title": "The Call of the Wild / White Fang",
+      "author": "Jack London",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Brave New World and Brave New World Revisited",
+      "author": "Aldous Huxley",
+      "date_read": null,
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "If We Were Villains",
+      "author": "M.L. Rio",
+      "date_read": null,
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Mansfield Park",
+      "author": "Jane Austen",
+      "date_read": null,
+      "country": null,
+      "iso_n3": null
+    }
+  ]
+}
