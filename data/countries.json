@@ -1,0 +1,157 @@
+{
+  "Anton Chekhov": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  },
+  "Ben Macintyre": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Cao Xueqin": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  },
+  "Charles Duhigg": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Cixin Liu": {
+    "country": "People's Republic of China",
+    "iso_n3": "156",
+    "source": "wikidata"
+  },
+  "Dale Carnegie": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Dana Arnold": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  },
+  "Daniel Goleman": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Daniel Kahneman": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  },
+  "David McRaney": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "David Niven": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Elizabeth Gilbert": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Fyodor Dostoevsky": {
+    "country": "Russia",
+    "iso_n3": "643",
+    "source": "wikidata"
+  },
+  "George Orwell": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Gretchen Rubin": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Hermann Hesse": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  },
+  "Homer": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  },
+  "J.K. Rowling": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "John Gray": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "John Williams": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Liu Cixin": {
+    "country": "People's Republic of China",
+    "iso_n3": "156",
+    "source": "wikidata"
+  },
+  "Malcolm Gladwell": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Paulo Coelho": {
+    "country": "Brazil",
+    "iso_n3": "076",
+    "source": "wikidata"
+  },
+  "Pierce Brown": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Ray Bradbury": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Stephen R. Covey": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Suzanne Collins": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Travis Bradberry": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  },
+  "Viktor E. Frankl": {
+    "country": "Austria",
+    "iso_n3": "040",
+    "source": "wikidata"
+  },
+  "William Golding": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "William Shakespeare": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  }
+}

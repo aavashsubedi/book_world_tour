@@ -1,0 +1,251 @@
+{
+  "generated": "2026-08-08T10:45:30Z",
+  "person": "Aavash",
+  "books": [
+    {
+      "title": "The Odyssey",
+      "author": "Homer",
+      "date_read": "2026-08-07",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Stoner",
+      "author": "John Williams",
+      "date_read": "2026-05-26",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Ward No. 6",
+      "author": "Anton Chekhov",
+      "date_read": "2026-04-19",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Notes from the Underground",
+      "author": "Fyodor Dostoevsky",
+      "date_read": "2026-03-27",
+      "country": "Russia",
+      "iso_n3": "643"
+    },
+    {
+      "title": "The Dream of a Ridiculous Man",
+      "author": "Fyodor Dostoevsky",
+      "date_read": "2026-01-11",
+      "country": "Russia",
+      "iso_n3": "643"
+    },
+    {
+      "title": "White Nights",
+      "author": "Fyodor Dostoevsky",
+      "date_read": "2026-01-01",
+      "country": "Russia",
+      "iso_n3": "643"
+    },
+    {
+      "title": "Art History: A Very Short Introduction",
+      "author": "Dana Arnold",
+      "date_read": "2025-12-30",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Siddhartha",
+      "author": "Hermann Hesse",
+      "date_read": "2025-12-02",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "The Spy and the Traitor: The Greatest Espionage Story of the Cold War",
+      "author": "Ben Macintyre",
+      "date_read": "2024-06-01",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Morning Star (Red Rising Saga, #3)",
+      "author": "Pierce Brown",
+      "date_read": "2024-01-01",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Golden Son (Red Rising Saga, #2)",
+      "author": "Pierce Brown",
+      "date_read": "2024-01-01",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Death's End (The Three-Body Problem, #3)",
+      "author": "Cixin Liu",
+      "date_read": "2024-01-01",
+      "country": "People's Republic of China",
+      "iso_n3": "156"
+    },
+    {
+      "title": "The Three-Body Problem (Remembrance of Earth’s Past, #1)",
+      "author": "Liu Cixin",
+      "date_read": "2024-01-01",
+      "country": "People's Republic of China",
+      "iso_n3": "156"
+    },
+    {
+      "title": "Macbeth: Moment by Moment",
+      "author": "William Shakespeare",
+      "date_read": null,
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "The Hunger Games (The Hunger Games, #1)",
+      "author": "Suzanne Collins",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Dream of the Red Chamber",
+      "author": "Cao Xueqin",
+      "date_read": null,
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Man's Search for Meaning",
+      "author": "Viktor E. Frankl",
+      "date_read": null,
+      "country": "Austria",
+      "iso_n3": "040"
+    },
+    {
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Lord of the Flies",
+      "author": "William Golding",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "date_read": null,
+      "country": "Brazil",
+      "iso_n3": "076"
+    },
+    {
+      "title": "Red Rising (Red Rising Saga, #1)",
+      "author": "Pierce Brown",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Farenheit 451",
+      "author": "Ray Bradbury",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "First Things First",
+      "author": "Stephen R. Covey",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Emotional Intelligence: Why It Can Matter More Than IQ",
+      "author": "Daniel Goleman",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Emotional Intelligence 2.0",
+      "author": "Travis Bradberry",
+      "date_read": null,
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "The 100 Simple Secrets of Happy People: What Scientists Have Learned and How You Can Use It",
+      "author": "David Niven",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Happiness Project",
+      "author": "Gretchen Rubin",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Big Magic: Creative Living Beyond Fear",
+      "author": "Elizabeth Gilbert",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "You Are Not So Smart",
+      "author": "David McRaney",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Power of Habit: Why We Do What We Do in Life and Business",
+      "author": "Charles Duhigg",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "date_read": null,
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Men Are from Mars, Women Are from Venus",
+      "author": "John Gray",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "How to Win Friends & Influence People",
+      "author": "Dale Carnegie",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Blink: The Power of Thinking Without Thinking",
+      "author": "Malcolm Gladwell",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
+      "author": "J.K. Rowling",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    }
+  ]
+}

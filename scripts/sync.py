@@ -24,9 +24,8 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CSV_PATH = os.path.join(ROOT, "data", "goodreads_export.csv")
-CACHE_PATH = os.path.join(ROOT, "data", "countries.json")
-BOOKS_PATH = os.path.join(ROOT, "data", "books.json")
+DATA_DIR = os.path.join(ROOT, "data")
+CACHE_PATH = os.path.join(DATA_DIR, "countries.json")
 CONFIG_PATH = os.path.join(ROOT, "config.json")
 
 USER_AGENT = "BookWorldTour/1.0 (personal reading-map project; github.com)"
@@ -34,9 +33,19 @@ WIKIDATA_API = "https://www.wikidata.org/w/api.php"
 
 
 def http_get_json(url, headers=None, data=None, timeout=30):
-    req = urllib.request.Request(url, data=data, headers={"User-Agent": USER_AGENT, **(headers or {})})
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    """GET/POST JSON with retry + backoff (Wikidata 429s on bursts)."""
+    for attempt, backoff in enumerate((5, 15, 30, 0)):
+        try:
+            req = urllib.request.Request(
+                url, data=data, headers={"User-Agent": USER_AGENT, **(headers or {})})
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503) and backoff:
+                print(f"  HTTP {e.code}, retrying in {backoff}s...", file=sys.stderr)
+                time.sleep(backoff)
+                continue
+            raise
 
 
 def http_get_text(url, timeout=30):
@@ -56,11 +65,11 @@ def book_key(title, author):
 
 # ---------------------------------------------------------------- Goodreads CSV
 
-def load_csv():
+def load_csv(csv_path):
     books = []
-    if not os.path.exists(CSV_PATH):
+    if not os.path.exists(csv_path):
         return books
-    with open(CSV_PATH, newline="", encoding="utf-8-sig") as f:
+    with open(csv_path, newline="", encoding="utf-8-sig") as f:
         for row in csv.DictReader(f):
             if row.get("Exclusive Shelf", "").strip() != "read":
                 continue
@@ -97,9 +106,11 @@ def load_rss(rss_url):
                 date_read = datetime.strptime(read_at, "%a, %d %b %Y %H:%M:%S %z").strftime("%Y-%m-%d")
             except ValueError:
                 pass
-        shelves = (item.findtext("user_shelves") or "").strip()
-        # A read-shelf feed leaves user_shelves empty or includes "read"
-        if shelves and "read" not in [s.strip() for s in shelves.split(",")]:
+        # The feed is already filtered by ?shelf=read; user_shelves only lists
+        # *custom* shelves (favorites etc.), so keep those. Guard explicitly
+        # against the other exclusive shelves in case the feed URL lacks ?shelf=.
+        shelves = [s.strip() for s in (item.findtext("user_shelves") or "").split(",")]
+        if "currently-reading" in shelves or "to-read" in shelves:
             continue
         if title and author:
             books.append({"title": title, "author": author, "date_read": date_read})
@@ -182,30 +193,29 @@ def gemini_resolve_author(author, book_title):
 
 # ------------------------------------------------------------------------- main
 
-def main():
-    config = {}
-    if os.path.exists(CONFIG_PATH):
-        with open(CONFIG_PATH) as f:
-            config = json.load(f)
-
-    # Merge CSV backfill + RSS, dedupe (RSS wins on date conflicts: it's fresher)
+def collect_person_books(person):
+    """Merge a person's CSV backfill + RSS feed, deduped (fresher date wins)."""
+    csv_path = os.path.join(DATA_DIR, f"goodreads_export_{person['id']}.csv")
+    books = load_csv(csv_path)
+    if not books and os.path.exists(os.path.join(DATA_DIR, "goodreads_export.csv")):
+        books = load_csv(os.path.join(DATA_DIR, "goodreads_export.csv"))  # legacy name
     merged = {}
-    for b in load_csv() + load_rss(config.get("rss_url", "")):
+    for b in books + load_rss(person.get("rss_url", "")):
         k = book_key(b["title"], b["author"])
         if k not in merged or (b["date_read"] and not merged[k]["date_read"]):
             merged[k] = b
-    books = sorted(merged.values(), key=lambda b: b["date_read"] or "", reverse=True)
-    if not books:
-        print("No books found (no CSV and no/empty RSS) — leaving books.json untouched")
-        return
+    return sorted(merged.values(), key=lambda b: b["date_read"] or "", reverse=True)
 
-    # Load author->country cache
-    cache = {}
-    if os.path.exists(CACHE_PATH):
-        with open(CACHE_PATH) as f:
-            cache = json.load(f)
 
-    unresolved = sorted({b["author"] for b in books} - set(cache))
+def resolve_authors(books, cache):
+    """Fill the shared author->country cache for any author not yet resolved.
+
+    Authors with no iso_n3 (source "unresolved") are retried each run — a later
+    run may succeed, e.g. after a rate-limit blip or once GEMINI_API_KEY is
+    added. Resolved entries (and hand-edits) are never re-queried or overwritten.
+    """
+    resolved = {a for a, info in cache.items() if info.get("iso_n3")}
+    unresolved = sorted({b["author"] for b in books} - resolved)
     if unresolved:
         print(f"Resolving {len(unresolved)} new author(s)...")
     for author in unresolved:
@@ -213,27 +223,50 @@ def main():
         result = wikidata_resolve_author(author) or gemini_resolve_author(author, sample_title)
         cache[author] = result or {"country": None, "iso_n3": None, "source": "unresolved"}
         print(f"  {author} -> {cache[author]['country']} ({cache[author]['source']})")
-        time.sleep(0.5)  # be polite to the APIs
+        time.sleep(1.5)  # be polite to the APIs
 
-    with open(CACHE_PATH, "w") as f:
-        json.dump(cache, f, indent=2, ensure_ascii=False, sort_keys=True)
 
-    for b in books:
-        info = cache.get(b["author"], {})
-        b["country"] = info.get("country")
-        b["iso_n3"] = info.get("iso_n3")
+def main():
+    config = {}
+    if os.path.exists(CONFIG_PATH):
+        with open(CONFIG_PATH) as f:
+            config = json.load(f)
+    people = config.get("people") or [
+        {"id": "me", "name": "Me", "rss_url": config.get("rss_url", "")}]
 
-    out = {
-        "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "books": books,
-    }
-    with open(BOOKS_PATH, "w") as f:
-        json.dump(out, f, indent=2, ensure_ascii=False)
+    cache = {}
+    if os.path.exists(CACHE_PATH):
+        with open(CACHE_PATH) as f:
+            cache = json.load(f)
 
-    n_countries = len({b["iso_n3"] for b in books if b["iso_n3"]})
-    n_unresolved = sum(1 for b in books if not b["iso_n3"])
-    print(f"Wrote {len(books)} books across {n_countries} countries "
-          f"({n_unresolved} with unresolved author country)")
+    for person in people:
+        print(f"=== {person['name']} ({person['id']}) ===")
+        books = collect_person_books(person)
+        if not books:
+            print("No books found (no CSV and no/empty RSS) — skipping")
+            continue
+
+        resolve_authors(books, cache)
+        with open(CACHE_PATH, "w") as f:
+            json.dump(cache, f, indent=2, ensure_ascii=False, sort_keys=True)
+
+        for b in books:
+            info = cache.get(b["author"], {})
+            b["country"] = info.get("country")
+            b["iso_n3"] = info.get("iso_n3")
+
+        out = {
+            "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "person": person["name"],
+            "books": books,
+        }
+        with open(os.path.join(DATA_DIR, f"books_{person['id']}.json"), "w") as f:
+            json.dump(out, f, indent=2, ensure_ascii=False)
+
+        n_countries = len({b["iso_n3"] for b in books if b["iso_n3"]})
+        n_unresolved = sum(1 for b in books if not b["iso_n3"])
+        print(f"Wrote {len(books)} books across {n_countries} countries "
+              f"({n_unresolved} with unresolved author country)")
 
 
 if __name__ == "__main__":
