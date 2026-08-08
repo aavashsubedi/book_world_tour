@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book World Tour</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page:           #f9f9f7;
+    --surface-1:      #fcfcfb;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --border:         rgba(11,11,11,0.10);
+    --unread:         #e7e6e0;
+    --seq-1: #9ec5f4;
+    --seq-2: #6da7ec;
+    --seq-3: #3987e5;
+    --seq-4: #256abf;
+    --seq-5: #104281;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page:           #0d0d0d;
+      --surface-1:      #1a1a19;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --border:         rgba(255,255,255,0.10);
+      --unread:         #262624;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page:           #0d0d0d;
+    --surface-1:      #1a1a19;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted:     #898781;
+    --border:         rgba(255,255,255,0.10);
+    --unread:         #262624;
+  }
+
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    background: var(--page);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px 28px;
+    padding: 18px 24px 10px;
+  }
+  header h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: auto;
+  }
+  header h1 span { color: var(--text-muted); font-weight: 400; }
+
+  .tile { text-align: right; }
+  .tile .value { font-size: 26px; font-weight: 700; line-height: 1.1; }
+  .tile .value small { font-size: 15px; font-weight: 400; color: var(--text-muted); }
+  .tile .label { font-size: 12px; color: var(--text-secondary); }
+
+  #map-wrap {
+    flex: 1;
+    position: relative;
+    margin: 8px 16px 16px;
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 420px;
+  }
+  #map { width: 100%; height: 100%; display: block; cursor: grab; }
+  #map:active { cursor: grabbing; }
+
+  .country { stroke: var(--surface-1); stroke-width: 0.5; }
+  .country.read:hover, .country.unread:hover { stroke: var(--text-primary); stroke-width: 1; }
+
+  #legend {
+    position: absolute;
+    left: 14px;
+    bottom: 12px;
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 11px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #legend .swatch { display: flex; align-items: center; gap: 4px; }
+  #legend .swatch i {
+    width: 14px; height: 14px; border-radius: 3px; display: inline-block;
+    border: 1px solid var(--border);
+  }
+
+  #tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    padding: 10px 12px;
+    font-size: 12px;
+    max-width: 280px;
+    opacity: 0;
+    transition: opacity 0.1s;
+    z-index: 10;
+  }
+  #tooltip .tt-country { font-weight: 700; font-size: 13px; }
+  #tooltip .tt-count { color: var(--text-secondary); margin-bottom: 6px; }
+  #tooltip ul { list-style: none; padding: 0; }
+  #tooltip li { padding: 1px 0; color: var(--text-primary); }
+  #tooltip li .by { color: var(--text-muted); }
+  #tooltip .more { color: var(--text-muted); font-style: italic; }
+
+  footer {
+    padding: 0 24px 14px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  footer a { color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<header>
+  <h1>📚 Book World Tour <span>— where your reading has taken you</span></h1>
+  <div class="tile">
+    <div class="value" id="stat-countries">–<small> / 195</small></div>
+    <div class="label">countries</div>
+  </div>
+  <div class="tile">
+    <div class="value" id="stat-books">–</div>
+    <div class="label">books</div>
+  </div>
+  <div class="tile">
+    <div class="value" id="stat-authors">–</div>
+    <div class="label">authors</div>
+  </div>
+</header>
+
+<div id="map-wrap">
+  <svg id="map"></svg>
+  <div id="legend"></div>
+  <div id="tooltip"></div>
+</div>
+
+<footer>
+  Data synced daily from Goodreads · <span id="stat-updated"></span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script>
+(async function () {
+  // "Visit a friend": ?src=<URL of a friend's books.json on their GitHub Pages>
+  const params = new URLSearchParams(location.search);
+  const src = params.get("src");
+  let dataUrl = "data/books.json";
+  if (src) {
+    try {
+      const u = new URL(src);
+      if (u.protocol === "https:") dataUrl = u.href;
+    } catch (e) { /* ignore bad src, fall back to own data */ }
+  }
+
+  const [world, payload] = await Promise.all([
+    fetch("data/world-110m.json").then(r => r.json()),
+    fetch(dataUrl).then(r => r.json()),
+  ]);
+  if (dataUrl !== "data/books.json") {
+    const h1 = document.querySelector("header h1 span");
+    h1.textContent = "— visiting " + new URL(dataUrl).hostname;
+  }
+
+  const books = payload.books.filter(b => b.iso_n3);
+  const byCountry = new Map();
+  for (const b of books) {
+    if (!byCountry.has(b.iso_n3)) byCountry.set(b.iso_n3, []);
+    byCountry.get(b.iso_n3).push(b);
+  }
+
+  // Stats
+  document.getElementById("stat-countries").firstChild.textContent = byCountry.size;
+  document.getElementById("stat-books").textContent = payload.books.length;
+  document.getElementById("stat-authors").textContent =
+    new Set(payload.books.map(b => b.author)).size;
+  if (payload.generated) {
+    document.getElementById("stat-updated").textContent =
+      "last updated " + payload.generated.slice(0, 10);
+  }
+
+  // Sequential ramp, bucketed by book count
+  const css = getComputedStyle(document.documentElement);
+  const ramp = [1, 2, 3, 4, 5].map(i => css.getPropertyValue(`--seq-${i}`).trim());
+  const bucket = n => n >= 10 ? 4 : n >= 5 ? 3 : n >= 3 ? 2 : n >= 2 ? 1 : 0;
+  const bucketLabels = ["1", "2", "3–4", "5–9", "10+"];
+
+  // Legend
+  const legend = document.getElementById("legend");
+  legend.innerHTML =
+    `<span>Books read</span>` +
+    ramp.map((c, i) =>
+      `<span class="swatch"><i style="background:${c}"></i>${bucketLabels[i]}</span>`
+    ).join("") +
+    `<span class="swatch"><i style="background:var(--unread)"></i>none yet</span>`;
+
+  // Map
+  const svg = d3.select("#map");
+  const wrap = document.getElementById("map-wrap");
+  const width = 960, height = 500;
+  svg.attr("viewBox", `0 0 ${width} ${height}`).attr("preserveAspectRatio", "xMidYMid meet");
+
+  const countries = topojson.feature(world, world.objects.countries).features
+    .filter(f => f.id !== "010"); // drop Antarctica
+
+  const projection = d3.geoNaturalEarth1().fitSize([width, height - 10], {
+    type: "FeatureCollection", features: countries,
+  });
+  const path = d3.geoPath(projection);
+  const g = svg.append("g");
+
+  const tooltip = document.getElementById("tooltip");
+
+  g.selectAll("path")
+    .data(countries)
+    .join("path")
+    .attr("d", path)
+    .attr("class", d => byCountry.has(d.id) ? "country read" : "country unread")
+    .attr("fill", d => {
+      const list = byCountry.get(d.id);
+      return list ? ramp[bucket(list.length)] : "var(--unread)";
+    })
+    .on("mousemove", (event, d) => {
+      const list = byCountry.get(d.id) || [];
+      const shown = list.slice(0, 8);
+      tooltip.innerHTML =
+        `<div class="tt-country">${d.properties.name}</div>` +
+        `<div class="tt-count">${list.length === 0 ? "No books yet" :
+          list.length + (list.length === 1 ? " book" : " books")}</div>` +
+        (shown.length
+          ? `<ul>${shown.map(b =>
+              `<li>${b.title} <span class="by">— ${b.author}</span></li>`).join("")}</ul>`
+          : "") +
+        (list.length > 8 ? `<div class="more">+${list.length - 8} more</div>` : "");
+      const r = wrap.getBoundingClientRect();
+      let x = event.clientX - r.left + 14, y = event.clientY - r.top + 14;
+      tooltip.style.opacity = 1;
+      const tw = tooltip.offsetWidth, th = tooltip.offsetHeight;
+      if (x + tw > r.width - 8) x = event.clientX - r.left - tw - 14;
+      if (y + th > r.height - 8) y = event.clientY - r.top - th - 14;
+      tooltip.style.left = x + "px";
+      tooltip.style.top = y + "px";
+    })
+    .on("mouseleave", () => { tooltip.style.opacity = 0; });
+
+  svg.call(d3.zoom()
+    .scaleExtent([1, 8])
+    .on("zoom", e => g.attr("transform", e.transform)));
+})();
+</script>
+</body>
+</html>

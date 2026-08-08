@@ -1,0 +1,18 @@
+{
+  "generated": "2026-08-08T00:00:00Z",
+  "sample": true,
+  "books": [
+    {"title": "Norwegian Wood", "author": "Haruki Murakami", "country": "Japan", "iso_n3": "392", "date_read": "2025-01-12"},
+    {"title": "Kafka on the Shore", "author": "Haruki Murakami", "country": "Japan", "iso_n3": "392", "date_read": "2025-03-02"},
+    {"title": "Half of a Yellow Sun", "author": "Chimamanda Ngozi Adichie", "country": "Nigeria", "iso_n3": "566", "date_read": "2025-02-20"},
+    {"title": "One Hundred Years of Solitude", "author": "Gabriel García Márquez", "country": "Colombia", "iso_n3": "170", "date_read": "2024-11-05"},
+    {"title": "1984", "author": "George Orwell", "country": "United Kingdom", "iso_n3": "826", "date_read": "2024-08-14"},
+    {"title": "Beloved", "author": "Toni Morrison", "country": "United States", "iso_n3": "840", "date_read": "2024-09-30"},
+    {"title": "My Brilliant Friend", "author": "Elena Ferrante", "country": "Italy", "iso_n3": "380", "date_read": "2025-05-11"},
+    {"title": "The Vegetarian", "author": "Han Kang", "country": "South Korea", "iso_n3": "410", "date_read": "2025-06-01"},
+    {"title": "The Alchemist", "author": "Paulo Coelho", "country": "Brazil", "iso_n3": "076", "date_read": "2024-07-19"},
+    {"title": "Crime and Punishment", "author": "Fyodor Dostoevsky", "country": "Russia", "iso_n3": "643", "date_read": "2024-12-25"},
+    {"title": "The Kite Runner", "author": "Khaled Hosseini", "country": "Afghanistan", "iso_n3": "004", "date_read": "2025-04-08"},
+    {"title": "Things Fall Apart", "author": "Chinua Achebe", "country": "Nigeria", "iso_n3": "566", "date_read": "2025-07-15"}
+  ]
+}
