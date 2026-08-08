@@ -1,13 +1,13 @@
 {
-  "generated": "2026-08-08T15:27:24Z",
+  "generated": "2026-08-08T22:36:49Z",
   "person": "Aavash",
   "books": [
     {
       "title": "The Odyssey",
       "author": "Homer",
       "date_read": "2026-08-07",
-      "country": "United States",
-      "iso_n3": "840"
+      "country": "Greece",
+      "iso_n3": "300"
     },
     {
       "title": "Stoner",
@@ -55,8 +55,8 @@
       "title": "The Death of Ivan Ilych",
       "author": "Leo Tolstoy",
       "date_read": "2025-12-31",
-      "country": "United States",
-      "iso_n3": "840"
+      "country": "Russia",
+      "iso_n3": "643"
     },
     {
       "title": "Art History: A Very Short Introduction",

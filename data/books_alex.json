@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T15:27:28Z",
+  "generated": "2026-08-08T22:36:54Z",
   "person": "Alex",
   "books": [
     {
@@ -636,8 +636,8 @@
       "title": "Domnișoara Christina. Șarpele",
       "author": "Mircea Eliade",
       "date_read": "2018-04-25",
-      "country": "United States",
-      "iso_n3": "840"
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Mic dejun la Tiffany",
@@ -664,8 +664,8 @@
       "title": "Povestaşul",
       "author": "Mario Vargas Llosa",
       "date_read": "2017-04-13",
-      "country": "Spain",
-      "iso_n3": "724"
+      "country": "Peru",
+      "iso_n3": "604"
     },
     {
       "title": "Palatul de gheață. Sămânța",

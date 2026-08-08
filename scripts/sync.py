@@ -40,6 +40,26 @@ HISTORICAL_ISO = {
     "280": "276",  # West Germany -> Germany
 }
 
+# Historical states with NO ISO code at all, by Wikidata QID -> (modern name, iso_n3).
+# Without this, e.g. Tolstoy (Russian Empire) yields no ISO and a namesake wins instead.
+HISTORICAL_QID = {
+    "Q34266":  ("Russia", "643"),          # Russian Empire
+    "Q15180":  ("Russia", "643"),          # Soviet Union
+    "Q28513":  ("Austria", "040"),         # Austria-Hungary
+    "Q131964": ("Austria", "040"),         # Austrian Empire
+    "Q33946":  ("Czechia", "203"),         # Czechoslovakia
+    "Q36704":  ("Serbia", "688"),          # Yugoslavia
+    "Q172107": ("Germany", "276"),         # Kingdom of Prussia
+    "Q43287":  ("Germany", "276"),         # German Empire
+    "Q41304":  ("Germany", "276"),         # Weimar Republic
+    "Q7318":   ("Germany", "276"),         # Nazi Germany
+    "Q161885": ("United Kingdom", "826"),  # Kingdom of Great Britain
+    "Q174193": ("United Kingdom", "826"),  # UK of Great Britain and Ireland
+    "Q172579": ("Italy", "380"),           # Kingdom of Italy
+    "Q8733":   ("China", "156"),           # Qing dynasty
+    "Q13426199": ("Turkey", "792"),        # Ottoman Empire
+}
+
 
 def http_get_json(url, headers=None, data=None, timeout=30):
     """GET/POST JSON with retry + backoff (Wikidata 429s on bursts)."""
@@ -136,7 +156,7 @@ def wikidata_resolve_author(author):
     country of citizenship (P27) and its ISO 3166-1 numeric code (P299).
     """
     sparql = """
-    SELECT ?countryLabel ?iso WHERE {
+    SELECT ?country ?countryLabel ?iso ?writer WHERE {
       SERVICE wikibase:mwapi {
         bd:serviceParam wikibase:endpoint "www.wikidata.org";
                         wikibase:api "EntitySearch";
@@ -146,9 +166,10 @@ def wikidata_resolve_author(author):
         ?ordinal wikibase:apiOrdinal true.
       }
       ?item wdt:P31 wd:Q5; wdt:P27 ?country.
-      ?country wdt:P299 ?iso.
+      OPTIONAL { ?country wdt:P299 ?iso. }
+      OPTIONAL { ?item wdt:P106/wdt:P279* wd:Q36180. BIND(1 AS ?writer) }
       SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
-    } ORDER BY ASC(?ordinal) LIMIT 1
+    } ORDER BY DESC(?writer) ASC(?ordinal) LIMIT 5
     """ % json.dumps(author)
     try:
         data = http_get_json(
@@ -156,11 +177,17 @@ def wikidata_resolve_author(author):
             + urllib.parse.quote(sparql),
             headers={"Accept": "application/sparql-results+json"},
         )
-        rows = data["results"]["bindings"]
-        if rows:
-            return {"country": rows[0]["countryLabel"]["value"],
-                    "iso_n3": rows[0]["iso"]["value"].zfill(3),
-                    "source": "wikidata"}
+        # Rows are ordered writers-first, then by search rank. Take the first row
+        # whose country has an ISO code or is a known historical state.
+        for row in data["results"]["bindings"]:
+            qid = row["country"]["value"].rsplit("/", 1)[-1]
+            if qid in HISTORICAL_QID:
+                name, iso = HISTORICAL_QID[qid]
+                return {"country": name, "iso_n3": iso, "source": "wikidata"}
+            if "iso" in row:
+                return {"country": row["countryLabel"]["value"],
+                        "iso_n3": row["iso"]["value"].zfill(3),
+                        "source": "wikidata"}
     except Exception as e:
         print(f"  wikidata error for {author}: {e}", file=sys.stderr)
     return None

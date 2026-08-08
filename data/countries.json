@@ -240,9 +240,9 @@
     "source": "wikidata"
   },
   "Homer": {
-    "country": "United States",
-    "iso_n3": "840",
-    "source": "wikidata"
+    "country": "Greece",
+    "iso_n3": "300",
+    "source": "manual"
   },
   "Ioan Slavici": {
     "country": "Romania",
@@ -330,8 +330,8 @@
     "source": "unresolved"
   },
   "Leo Tolstoy": {
-    "country": "United States",
-    "iso_n3": "840",
+    "country": "Russia",
+    "iso_n3": "643",
     "source": "wikidata"
   },
   "Liu Cixin": {
@@ -370,9 +370,9 @@
     "source": "unresolved"
   },
   "Mario Vargas Llosa": {
-    "country": "Spain",
-    "iso_n3": "724",
-    "source": "wikidata"
+    "country": "Peru",
+    "iso_n3": "604",
+    "source": "manual"
   },
   "Matt Haig": {
     "country": "United Kingdom",
@@ -405,9 +405,9 @@
     "source": "wikidata"
   },
   "Mircea Eliade": {
-    "country": "United States",
-    "iso_n3": "840",
-    "source": "wikidata"
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "manual"
   },
   "Nathalie Sarraute": {
     "country": "France",
