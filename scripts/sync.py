@@ -60,6 +60,24 @@ HISTORICAL_QID = {
     "Q13426199": ("Turkey", "792"),        # Ottoman Empire
 }
 
+# Occupations that mark a search hit as the author we're after rather than a
+# same-named painter, footballer or genus of birds.
+WRITER_OCCUPATIONS = {
+    "Q36180",    # writer
+    "Q49757",    # poet
+    "Q6625963",  # novelist
+    "Q214917",   # playwright
+    "Q1930187",  # journalist
+    "Q11774202", # essayist
+    "Q4964182",  # philosopher
+    "Q201788",   # historian
+    "Q333634",   # translator
+    "Q28389",    # screenwriter
+    "Q482980",   # author
+    "Q4853732",  # children's writer
+    "Q15980158", # non-fiction writer
+}
+
 
 def http_get_json(url, headers=None, data=None, timeout=30):
     """GET/POST JSON with retry + backoff (Wikidata 429s on bursts)."""
@@ -149,45 +167,97 @@ def load_rss(rss_url):
 
 # ------------------------------------------------------------ country resolvers
 
+def _claim_ids(entity, prop):
+    """QIDs asserted by `prop` on `entity`, skipping novalue/somevalue snaks."""
+    out = []
+    for c in entity.get("claims", {}).get(prop, []):
+        snak = c.get("mainsnak", {})
+        if snak.get("snaktype") != "value":
+            continue
+        val = snak.get("datavalue", {}).get("value", {})
+        if isinstance(val, dict) and "id" in val:
+            out.append(val["id"])
+    return out
+
+
+_country_cache = {}
+
+
+def _country_info(qid):
+    """(name, iso_n3) for a country QID, or None if it has no usable code."""
+    if qid in HISTORICAL_QID:
+        return HISTORICAL_QID[qid]
+    if qid in _country_cache:
+        return _country_cache[qid]
+    result = None
+    ent = http_get_json(
+        f"{WIKIDATA_API}?action=wbgetentities&ids={qid}"
+        "&props=labels|claims&languages=en&format=json"
+    )["entities"][qid]
+    for c in ent.get("claims", {}).get("P299", []):  # ISO 3166-1 numeric
+        snak = c.get("mainsnak", {})
+        if snak.get("snaktype") == "value":
+            iso = snak["datavalue"]["value"]
+            name = ent.get("labels", {}).get("en", {}).get("value", qid)
+            result = (name, str(iso).zfill(3))
+            break
+    _country_cache[qid] = result
+    return result
+
+
 def wikidata_resolve_author(author):
     """Return {'country', 'iso_n3', 'source'} or None.
 
-    Single SPARQL query: search the name, keep humans (P31 Q5), take their
-    country of citizenship (P27) and its ISO 3166-1 numeric code (P299).
+    Uses the regular Wikidata API (the SPARQL endpoint is rate-limited far more
+    aggressively). Two requests per author: search by name, then fetch all
+    candidates at once and pick the best human — preferring one who actually
+    writes, since plain search rank happily returns a painter or a bird genus
+    for names like "Homer" or "Sappho".
     """
-    sparql = """
-    SELECT ?country ?countryLabel ?iso ?writer WHERE {
-      SERVICE wikibase:mwapi {
-        bd:serviceParam wikibase:endpoint "www.wikidata.org";
-                        wikibase:api "EntitySearch";
-                        mwapi:search %s;
-                        mwapi:language "en".
-        ?item wikibase:apiOutputItem mwapi:item.
-        ?ordinal wikibase:apiOrdinal true.
-      }
-      ?item wdt:P31 wd:Q5; wdt:P27 ?country.
-      OPTIONAL { ?country wdt:P299 ?iso. }
-      OPTIONAL { ?item wdt:P106/wdt:P279* wd:Q36180. BIND(1 AS ?writer) }
-      SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
-    } ORDER BY DESC(?writer) ASC(?ordinal) LIMIT 5
-    """ % json.dumps(author)
     try:
-        data = http_get_json(
-            "https://query.wikidata.org/sparql?format=json&query="
-            + urllib.parse.quote(sparql),
-            headers={"Accept": "application/sparql-results+json"},
+        search = http_get_json(
+            f"{WIKIDATA_API}?action=wbsearchentities&format=json&language=en"
+            "&type=item&limit=5&search=" + urllib.parse.quote(author)
         )
-        # Rows are ordered writers-first, then by search rank. Take the first row
-        # whose country has an ISO code or is a known historical state.
-        for row in data["results"]["bindings"]:
-            qid = row["country"]["value"].rsplit("/", 1)[-1]
-            if qid in HISTORICAL_QID:
-                name, iso = HISTORICAL_QID[qid]
-                return {"country": name, "iso_n3": iso, "source": "wikidata"}
-            if "iso" in row:
-                return {"country": row["countryLabel"]["value"],
-                        "iso_n3": row["iso"]["value"].zfill(3),
-                        "source": "wikidata"}
+        qids = [h["id"] for h in search.get("search", [])]
+        if not qids:
+            return None
+
+        ents = http_get_json(
+            f"{WIKIDATA_API}?action=wbgetentities&ids={'|'.join(qids)}"
+            "&props=claims|descriptions&languages=en&format=json"
+        )["entities"]
+
+        # Humans only, writers first, search rank as the tie-break.
+        ranked = []
+        for rank, qid in enumerate(qids):
+            ent = ents.get(qid, {})
+            if "Q5" not in _claim_ids(ent, "P31"):  # instance of: human
+                continue
+            desc = ent.get("descriptions", {}).get("en", {}).get("value", "").lower()
+            writes = bool(set(_claim_ids(ent, "P106")) & WRITER_OCCUPATIONS) or any(
+                w in desc for w in ("writer", "author", "novelist", "poet",
+                                    "playwright", "essayist", "journalist"))
+            ranked.append((0 if writes else 1, rank, qid, ent))
+        ranked.sort()
+
+        for _, _, _, ent in ranked:
+            for country_qid in _claim_ids(ent, "P27"):  # country of citizenship
+                info = _country_info(country_qid)
+                if info:
+                    return {"country": info[0], "iso_n3": info[1], "source": "wikidata"}
+            # Ancient and stateless authors have no citizenship — fall back to
+            # the country their birthplace sits in.
+            for place_qid in _claim_ids(ent, "P19"):  # place of birth
+                place = http_get_json(
+                    f"{WIKIDATA_API}?action=wbgetentities&ids={place_qid}"
+                    "&props=claims&languages=en&format=json"
+                )["entities"][place_qid]
+                for country_qid in _claim_ids(place, "P17"):  # country
+                    info = _country_info(country_qid)
+                    if info:
+                        return {"country": info[0], "iso_n3": info[1],
+                                "source": "wikidata-birthplace"}
     except Exception as e:
         print(f"  wikidata error for {author}: {e}", file=sys.stderr)
     return None

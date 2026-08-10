@@ -28,6 +28,7 @@ jobs:
         run: python scripts/sync.py
 
       - name: Commit updated data
+        if: always()   # keep partial author-cache progress even if sync errored
         run: |
           git config user.name "book-world-tour-bot"
           git config user.email "actions@users.noreply.github.com"
