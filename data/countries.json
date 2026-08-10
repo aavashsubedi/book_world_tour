@@ -1,32 +1,72 @@
 {
+  "A.E. Hotchner": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "Adam Silvera": {
     "country": "United States",
     "iso_n3": "840",
     "source": "wikidata"
   },
   "Agatha Christie": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
   },
   "Alana S. Portero": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "Spain",
+    "iso_n3": "724",
+    "source": "wikidata"
   },
   "Albert Camus": {
     "country": "France",
     "iso_n3": "250",
     "source": "wikidata"
   },
+  "Alberto Manguel": {
+    "country": "Argentina",
+    "iso_n3": "032",
+    "source": "wikidata"
+  },
   "Aldous Huxley": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Alex. Ștefănescu": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
+  "Alexandre Dumas": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Alexandru Kirițescu": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
   },
   "Alexandru Monciu-Sudinski": {
     "country": "Sweden",
     "iso_n3": "752",
+    "source": "wikidata"
+  },
+  "Alexandru Paleologu": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
+  "Alice Walker": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Amélie Nothomb": {
+    "country": "Belgium",
+    "iso_n3": "056",
     "source": "wikidata"
   },
   "Ana Maria Sandu": {
@@ -34,14 +74,44 @@
     "iso_n3": "642",
     "source": "wikidata"
   },
+  "Andrei Oișteanu": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
+  "Andrzej Sapkowski": {
+    "country": "Poland",
+    "iso_n3": "616",
+    "source": "wikidata"
+  },
+  "André Aciman": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "André Gide": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
   "Angela Carter": {
     "country": "United Kingdom",
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "Anița Nandriș-Cudla": {
+    "country": "Ukraine",
+    "iso_n3": "804",
+    "source": "wikidata-birthplace"
+  },
   "Anne Carson": {
     "country": "Canada",
     "iso_n3": "124",
+    "source": "wikidata"
+  },
+  "Anthony Burgess": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
     "source": "wikidata"
   },
   "Anthony Doerr": {
@@ -49,54 +119,129 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
-  "Anton Chekhov": {
+  "Antoine de Saint-Exupéry": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Antologie si note de Nicolae Manolescu": {
     "country": null,
     "iso_n3": null,
     "source": "unresolved"
+  },
+  "Anton Chekhov": {
+    "country": "Russia",
+    "iso_n3": "643",
+    "source": "wikidata"
+  },
+  "Aristotle": {
+    "country": "Greece",
+    "iso_n3": "300",
+    "source": "wikidata-birthplace"
+  },
+  "Arnošt Lustig": {
+    "country": "Czechia",
+    "iso_n3": "203",
+    "source": "wikidata"
   },
   "Arthur Conan Doyle": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Arthur Miller": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
   },
   "Arundhati Roy": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "India",
+    "iso_n3": "356",
+    "source": "wikidata"
+  },
+  "Ben Hutchinson": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
   },
   "Ben Macintyre": {
     "country": "United Kingdom",
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "Bernhard Schlink": {
+    "country": "Germany",
+    "iso_n3": "276",
+    "source": "wikidata"
+  },
   "Bogdan-Alexandru Stănescu": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
+  "Boris Vian": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Brian Clegg": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
   },
   "Camelia Cavadia": {
     "country": "Romania",
     "iso_n3": "642",
     "source": "wikidata"
   },
+  "Camil Petrescu": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
   "Cao Xueqin": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "China",
+    "iso_n3": "156",
+    "source": "wikidata"
+  },
+  "Carlos Ruiz Zafón": {
+    "country": "Spain",
+    "iso_n3": "724",
+    "source": "wikidata"
   },
   "Carol Ann Duffy": {
     "country": "United Kingdom",
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "Cath Crowley": {
+    "country": "Australia",
+    "iso_n3": "036",
+    "source": "wikidata"
+  },
   "Cella Serghi": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
   },
   "Chantal Akerman": {
     "country": "Belgium",
     "iso_n3": "056",
+    "source": "wikidata"
+  },
+  "Charles Baudelaire": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Charles Darwin": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Charles Dickens": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
     "source": "wikidata"
   },
   "Charles Duhigg": {
@@ -104,10 +249,30 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "Charlotte Brontë": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Christiane V. Felscherinow": {
     "country": null,
     "iso_n3": null,
     "source": "unresolved"
+  },
+  "Christopher Dell": {
+    "country": "Germany",
+    "iso_n3": "276",
+    "source": "wikidata"
+  },
+  "Christopher Isherwood": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Christopher Marlowe": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata-birthplace"
   },
   "Chuck Palahniuk": {
     "country": "United States",
@@ -119,10 +284,30 @@
     "iso_n3": "156",
     "source": "wikidata"
   },
+  "Constantin Negruzzi": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata-birthplace"
+  },
   "Constantinos P. Cavafy": {
     "country": null,
     "iso_n3": null,
     "source": "unresolved"
+  },
+  "Cormac McCarthy": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Cécile Pardi": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata-birthplace"
+  },
+  "Cătălin Dorian Florescu": {
+    "country": "Switzerland",
+    "iso_n3": "756",
+    "source": "wikidata"
   },
   "Daisy Johnson": {
     "country": "United Kingdom",
@@ -134,7 +319,17 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "Dan C. Mihăilescu": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
   "Dana Arnold": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Daniel Defoe": {
     "country": "United Kingdom",
     "iso_n3": "826",
     "source": "wikidata"
@@ -165,13 +360,23 @@
     "source": "wikidata"
   },
   "Deborah Feldman": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
   },
   "Deborah Levy": {
     "country": "United Kingdom",
     "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Donna Tartt": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "E.E. Cummings": {
+    "country": "United States",
+    "iso_n3": "840",
     "source": "wikidata"
   },
   "E.M. Forster": {
@@ -179,9 +384,19 @@
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "Edgar Allan Poe": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "Edith Wharton": {
     "country": "United States",
     "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Elena Ferrante": {
+    "country": "Italy",
+    "iso_n3": "380",
     "source": "wikidata"
   },
   "Elizabeth Gilbert": {
@@ -189,9 +404,69 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "Elton John": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Emily Kearns": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Eric de Kermel": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Erich Kästner": {
+    "country": "Germany",
+    "iso_n3": "276",
+    "source": "wikidata"
+  },
+  "Ernest Hemingway": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Ernst Robert Curtius": {
+    "country": "Germany",
+    "iso_n3": "276",
+    "source": "wikidata"
+  },
+  "Ethan Rutherford": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Eugène Ionesco": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
   "Euripides": {
     "country": "Greece",
     "iso_n3": "300",
+    "source": "wikidata"
+  },
+  "F. Scott Fitzgerald": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Flea": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Francesc Miralles": {
+    "country": "Spain",
+    "iso_n3": "724",
+    "source": "wikidata"
+  },
+  "Frank Herbert": {
+    "country": "United States",
+    "iso_n3": "840",
     "source": "wikidata"
   },
   "Franz Kafka": {
@@ -199,9 +474,39 @@
     "iso_n3": "203",
     "source": "wikidata"
   },
+  "François Rabelais": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Françoise Sagan": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Fredrik Backman": {
+    "country": "Sweden",
+    "iso_n3": "752",
+    "source": "wikidata"
+  },
   "Fyodor Dostoevsky": {
     "country": "Russia",
     "iso_n3": "643",
+    "source": "wikidata"
+  },
+  "Gabriel García Márquez": {
+    "country": "Colombia",
+    "iso_n3": "170",
+    "source": "wikidata"
+  },
+  "Garabet Ibrăileanu": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
+  "Gary Paulsen": {
+    "country": "United States",
+    "iso_n3": "840",
     "source": "wikidata"
   },
   "Gellu Naum": {
@@ -209,22 +514,102 @@
     "iso_n3": "642",
     "source": "wikidata"
   },
+  "Genevieve Cogman": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Geneviève Dormann": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
   "George Orwell": {
     "country": "United Kingdom",
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "George R.R. Martin": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "George Sand": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
   "George Saunders": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Gerald Durrell": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Gib I. Mihăescu": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
+  "Giovanni Papini": {
+    "country": "Italy",
+    "iso_n3": "380",
+    "source": "wikidata"
   },
   "Gretchen Rubin": {
     "country": "United States",
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "Guillaume Apollinaire": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Gustave Flaubert": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Guy de Maupassant": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
   "H.D.": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "H.G. Wells": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Han Kang": {
+    "country": "South Korea",
+    "iso_n3": "410",
+    "source": "wikidata"
+  },
+  "Harper Lee": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Haruki Murakami": {
+    "country": "Japan",
+    "iso_n3": "392",
+    "source": "wikidata"
+  },
+  "Helene Hanff": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Henry Miller": {
     "country": "United States",
     "iso_n3": "840",
     "source": "wikidata"
@@ -244,7 +629,37 @@
     "iso_n3": "300",
     "source": "manual"
   },
+  "Honoré de Balzac": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Horia-Roman Patapievici": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
+  "Hortensia Papadat-Bengescu": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
+  "Humphrey Carpenter": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Ioan Slavici": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata"
+  },
+  "Ion Creangă": {
+    "country": "Romania",
+    "iso_n3": "642",
+    "source": "wikidata-birthplace"
+  },
+  "Ionel Teodoreanu": {
     "country": "Romania",
     "iso_n3": "642",
     "source": "wikidata"
@@ -254,19 +669,59 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "Ismail Kadare": {
+    "country": "Albania",
+    "iso_n3": "008",
+    "source": "wikidata"
+  },
+  "Italo Calvino": {
+    "country": "Italy",
+    "iso_n3": "380",
+    "source": "wikidata"
+  },
+  "Ivan Turgenev": {
+    "country": "Russia",
+    "iso_n3": "643",
+    "source": "wikidata"
+  },
+  "J.D. Salinger": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "J.K. Rowling": {
     "country": "United Kingdom",
     "iso_n3": "826",
     "source": "wikidata"
+  },
+  "J.N. Illouz": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  },
+  "J.R. Moehringer": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
   },
   "J.R.R. Tolkien": {
     "country": "United Kingdom",
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "Jack Kerouac": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "Jack London": {
     "country": "United States",
     "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Jacques Le Goff": {
+    "country": "France",
+    "iso_n3": "250",
     "source": "wikidata"
   },
   "James Baldwin": {
@@ -280,9 +735,44 @@
     "source": "wikidata"
   },
   "Jane Austen": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Jane Carruth": {
     "country": null,
     "iso_n3": null,
     "source": "unresolved"
+  },
+  "Jean Rhys": {
+    "country": "Dominica",
+    "iso_n3": "212",
+    "source": "wikidata"
+  },
+  "Jean-Paul Sartre": {
+    "country": "France",
+    "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Jenny Lee": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Joan Didion": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Johann Wolfgang von Goethe": {
+    "country": "Germany",
+    "iso_n3": "276",
+    "source": "wikidata-birthplace"
+  },
+  "John Boyne": {
+    "country": "Ireland",
+    "iso_n3": "372",
+    "source": "wikidata"
   },
   "John Gray": {
     "country": "United States",
@@ -390,9 +880,9 @@
     "source": "wikidata"
   },
   "Mikhail Bulgakov": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "Russia",
+    "iso_n3": "643",
+    "source": "wikidata"
   },
   "Mina Loy": {
     "country": null,

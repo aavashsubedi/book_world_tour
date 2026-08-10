@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T22:36:49Z",
+  "generated": "2026-08-10T20:12:07Z",
   "person": "Aavash",
   "books": [
     {
@@ -20,8 +20,8 @@
       "title": "Ward No. 6",
       "author": "Anton Chekhov",
       "date_read": "2026-04-19",
-      "country": null,
-      "iso_n3": null
+      "country": "Russia",
+      "iso_n3": "643"
     },
     {
       "title": "Notes from the Underground",
@@ -34,8 +34,8 @@
       "title": "The Master and Margarita",
       "author": "Mikhail Bulgakov",
       "date_read": "2026-02-22",
-      "country": null,
-      "iso_n3": null
+      "country": "Russia",
+      "iso_n3": "643"
     },
     {
       "title": "The Dream of a Ridiculous Man",
@@ -160,8 +160,8 @@
       "title": "Dream of the Red Chamber",
       "author": "Cao Xueqin",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "China",
+      "iso_n3": "156"
     },
     {
       "title": "Man's Search for Meaning",
