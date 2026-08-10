@@ -237,6 +237,11 @@ def collect_person_books(person):
     return sorted(merged.values(), key=lambda b: b["date_read"] or "", reverse=True)
 
 
+def save_cache(cache):
+    with open(CACHE_PATH, "w") as f:
+        json.dump(cache, f, indent=2, ensure_ascii=False, sort_keys=True)
+
+
 def resolve_authors(books, cache):
     """Fill the shared author->country cache for any author not yet resolved.
 
@@ -247,14 +252,20 @@ def resolve_authors(books, cache):
     resolved = {a for a, info in cache.items() if info.get("iso_n3")}
     unresolved = sorted({b["author"] for b in books} - resolved)
     if unresolved:
-        print(f"Resolving {len(unresolved)} new author(s)...")
-    for author in unresolved:
+        print(f"Resolving {len(unresolved)} new author(s)...", flush=True)
+    for i, author in enumerate(unresolved, 1):
         sample_title = next(b["title"] for b in books if b["author"] == author)
         result = wikidata_resolve_author(author) or gemini_resolve_author(author, sample_title)
         if result:
             result["iso_n3"] = HISTORICAL_ISO.get(result["iso_n3"], result["iso_n3"])
         cache[author] = result or {"country": None, "iso_n3": None, "source": "unresolved"}
-        print(f"  {author} -> {cache[author]['country']} ({cache[author]['source']})")
+        print(f"  [{i}/{len(unresolved)}] {author} -> "
+              f"{cache[author]['country']} ({cache[author]['source']})", flush=True)
+        # Checkpoint: a long backfill can span hundreds of authors, and losing
+        # them all to an interrupt or a job timeout would mean redoing the
+        # lookups from scratch.
+        if i % 10 == 0:
+            save_cache(cache)
         time.sleep(1.5)  # be polite to the APIs
 
 
@@ -279,8 +290,7 @@ def main():
             continue
 
         resolve_authors(books, cache)
-        with open(CACHE_PATH, "w") as f:
-            json.dump(cache, f, indent=2, ensure_ascii=False, sort_keys=True)
+        save_cache(cache)
 
         for b in books:
             info = cache.get(b["author"], {})
