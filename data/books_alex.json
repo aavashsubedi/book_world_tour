@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-10T20:12:08Z",
+  "generated": "2026-08-10T20:40:27Z",
   "person": "Alex",
   "books": [
     {
@@ -76,22 +76,22 @@
       "title": "Granta 175: Scandinavia (The Magazine of New Writing)",
       "author": "Thomas Meaney",
       "date_read": "2026-06-28",
-      "country": null,
-      "iso_n3": null
+      "country": "Ireland",
+      "iso_n3": "372"
     },
     {
       "title": "Notre part de nuit",
       "author": "Mariana Enriquez",
       "date_read": "2026-06-24",
-      "country": null,
-      "iso_n3": null
+      "country": "Argentina",
+      "iso_n3": "032"
     },
     {
       "title": "Dix heures et demie du soir en été",
       "author": "Marguerite Duras",
       "date_read": "2026-06-23",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Mother Mary Comes to Me",
@@ -111,8 +111,8 @@
       "title": "A Sentimental Journey",
       "author": "Laurence Sterne",
       "date_read": "2026-06-01",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Stoner",
@@ -132,15 +132,15 @@
       "title": "Om udregning af rumfang IV",
       "author": "Solvej Balle",
       "date_read": "2026-04-26",
-      "country": null,
-      "iso_n3": null
+      "country": "Kingdom of Denmark",
+      "iso_n3": "208"
     },
     {
       "title": "If Not, Winter: Fragments of Sappho (Vintage Contemporaries)",
       "author": "Sappho",
       "date_read": "2026-04-25",
-      "country": null,
-      "iso_n3": null
+      "country": "Greece",
+      "iso_n3": "300"
     },
     {
       "title": "La Porte",
@@ -174,15 +174,15 @@
       "title": "La trilogie de Copenhague: Enfance - Jeunesse - Dépendance",
       "author": "Tove Ditlevsen",
       "date_read": "2026-03-11",
-      "country": null,
-      "iso_n3": null
+      "country": "Kingdom of Denmark",
+      "iso_n3": "208"
     },
     {
       "title": "James",
       "author": "Percival Everett",
       "date_read": "2026-03-01",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Jour de ressac",
@@ -195,8 +195,8 @@
       "title": "Om udregning af rumfang III",
       "author": "Solvej Balle",
       "date_read": "2026-02-27",
-      "country": null,
-      "iso_n3": null
+      "country": "Kingdom of Denmark",
+      "iso_n3": "208"
     },
     {
       "title": "The Waves",
@@ -237,8 +237,8 @@
       "title": "Om udregning af rumfang II",
       "author": "Solvej Balle",
       "date_read": "2025-04-23",
-      "country": null,
-      "iso_n3": null
+      "country": "Kingdom of Denmark",
+      "iso_n3": "208"
     },
     {
       "title": "Zenobia",
@@ -258,8 +258,8 @@
       "title": "On the Calculation of Volume I",
       "author": "Solvej Balle",
       "date_read": "2025-04-12",
-      "country": null,
-      "iso_n3": null
+      "country": "Kingdom of Denmark",
+      "iso_n3": "208"
     },
     {
       "title": "Lincoln in the Bardo",
@@ -300,8 +300,8 @@
       "title": "Une soif d'amour",
       "author": "Yukio Mishima",
       "date_read": "2025-04-08",
-      "country": null,
-      "iso_n3": null
+      "country": "Japan",
+      "iso_n3": "392"
     },
     {
       "title": "H.D. - Selected Poems",
@@ -321,15 +321,15 @@
       "title": "Stories and Essays of Mina Loy (British Literature)",
       "author": "Mina Loy",
       "date_read": "2025-01-23",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Moderato cantabile",
       "author": "Marguerite Duras",
       "date_read": "2025-01-15",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "The Comfort Book",
@@ -342,8 +342,8 @@
       "title": "Peace Of Wild Things",
       "author": "Wendell Berry",
       "date_read": "2025-01-13",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "With My Back to the World: Poems",
@@ -356,8 +356,8 @@
       "title": "Blue Eyes, Black Hair",
       "author": "Marguerite Duras",
       "date_read": "2025-01-13",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Țigan țăndări",
@@ -398,8 +398,8 @@
       "title": "The Scarlet Letter",
       "author": "Nathaniel Hawthorne",
       "date_read": "2022-01-16",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Between Two Kingdoms: A Memoir of a Life Interrupted",
@@ -426,8 +426,8 @@
       "title": "Selected Stories",
       "author": "Katherine Mansfield",
       "date_read": "2021-11-15",
-      "country": null,
-      "iso_n3": null
+      "country": "New Zealand",
+      "iso_n3": "554"
     },
     {
       "title": "The Bloody Chamber and Other Stories",
@@ -489,8 +489,8 @@
       "title": "Eu și Marley",
       "author": "John Grogan",
       "date_read": "2021-06-20",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Caragiale: scrisoarea pierdută",
@@ -524,8 +524,8 @@
       "title": "Le Bal des folles",
       "author": "Victoria Mas",
       "date_read": "2021-06-01",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Fight Club",
@@ -538,8 +538,8 @@
       "title": "La tresse",
       "author": "Laetitia Colombani",
       "date_read": "2021-05-24",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "The Overstory",
@@ -580,8 +580,8 @@
       "title": "My Ántonia",
       "author": "Willa Cather",
       "date_read": "2021-03-11",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Call It Sleep",
@@ -636,15 +636,15 @@
       "title": "O Pioneers!",
       "author": "Willa Cather",
       "date_read": "2021-01-24",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Educated",
       "author": "Tara Westover",
       "date_read": "2021-01-21",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Pilote de guerre",
@@ -664,22 +664,22 @@
       "title": "Annabel",
       "author": "Kathleen Winter",
       "date_read": "2021-01-12",
-      "country": null,
-      "iso_n3": null
+      "country": "Canada",
+      "iso_n3": "124"
     },
     {
       "title": "Fear And Trembling and The Book on Adler (Everyman\\'S Library Classics)",
       "author": "Søren Kierkegaard",
       "date_read": "2021-01-10",
-      "country": null,
-      "iso_n3": null
+      "country": "Kingdom of Denmark",
+      "iso_n3": "208"
     },
     {
       "title": "Mary Ventura and the Ninth Kingdom: A Story",
       "author": "Sylvia Plath",
       "date_read": "2021-01-09",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "The Goldfinch",
@@ -692,8 +692,8 @@
       "title": "Piranesi",
       "author": "Susanna Clarke",
       "date_read": "2021-01-07",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Anna Karenina",
@@ -706,8 +706,8 @@
       "title": "Le Garçon qui n'existait pas",
       "author": "Sjón",
       "date_read": "2020-12-11",
-      "country": null,
-      "iso_n3": null
+      "country": "Iceland",
+      "iso_n3": "352"
     },
     {
       "title": "The Road",
@@ -720,36 +720,36 @@
       "title": "Beowulf",
       "author": "Seamus Heaney",
       "date_read": "2020-12-06",
-      "country": null,
-      "iso_n3": null
+      "country": "Ireland",
+      "iso_n3": "372"
     },
     {
       "title": "The Tudors: A Very Short Introduction",
       "author": "John Guy",
       "date_read": "2020-11-25",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Les larmes d'Œdipe",
       "author": "Wajdi Mouawad",
       "date_read": "2020-11-21",
-      "country": null,
-      "iso_n3": null
+      "country": "Lebanon",
+      "iso_n3": "422"
     },
     {
       "title": "Vulpea albastră",
       "author": "Sjón",
       "date_read": "2020-11-18",
-      "country": null,
-      "iso_n3": null
+      "country": "Iceland",
+      "iso_n3": "352"
     },
     {
       "title": "Littoral (Le Sang des Promesses, #1)",
       "author": "Wajdi Mouawad",
       "date_read": "2020-11-09",
-      "country": null,
-      "iso_n3": null
+      "country": "Lebanon",
+      "iso_n3": "422"
     },
     {
       "title": "Dr. Faustus",
@@ -769,8 +769,8 @@
       "title": "En attendant Godot",
       "author": "Samuel Beckett",
       "date_read": "2020-10-27",
-      "country": null,
-      "iso_n3": null
+      "country": "Ireland",
+      "iso_n3": "372"
     },
     {
       "title": "Macbeth",
@@ -790,8 +790,8 @@
       "title": "Sula",
       "author": "Toni Morrison",
       "date_read": "2020-10-24",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "La Libraire de la place aux herbes",
@@ -860,15 +860,15 @@
       "title": "Over the Top: A Raw Journey to Self-Love",
       "author": "Jonathan Van Ness",
       "date_read": "2020-08-31",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Naturally Tan",
       "author": "Tan France",
       "date_read": "2020-08-31",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Poetica",
@@ -881,8 +881,8 @@
       "title": "Notre-Dame de Paris",
       "author": "Victor Hugo",
       "date_read": "2020-08-14",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "François le Champi",
@@ -958,8 +958,8 @@
       "title": "Oameni normali",
       "author": "Sally Rooney",
       "date_read": "2020-06-03",
-      "country": null,
-      "iso_n3": null
+      "country": "Ireland",
+      "iso_n3": "372"
     },
     {
       "title": "Balada șerpilor și a păsărilor cântătoare (The Hunger Games, #0)",
@@ -972,8 +972,8 @@
       "title": "Orașul cu salcâmi",
       "author": "Mihail Sebastian",
       "date_read": "2020-05-16",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Anna K: A Love Story (Anna K, #1)",
@@ -993,8 +993,8 @@
       "title": "Circe",
       "author": "Madeline Miller",
       "date_read": "2020-04-26",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Despre liniştea spiritului. Despre tihnă",
@@ -1028,8 +1028,8 @@
       "title": "The Song of Achilles",
       "author": "Madeline Miller",
       "date_read": "2020-04-01",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Istoria secretă",
@@ -1042,15 +1042,15 @@
       "title": "Anne of Green Gables (Anne of Green Gables, #1)",
       "author": "L.M. Montgomery",
       "date_read": "2020-03-27",
-      "country": null,
-      "iso_n3": null
+      "country": "Canada",
+      "iso_n3": "124"
     },
     {
       "title": "Jurnal",
       "author": "Tudor Vianu",
       "date_read": "2020-03-26",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Jane Eyre",
@@ -1063,8 +1063,8 @@
       "title": "The Perks of Being a Wallflower",
       "author": "Stephen Chbosky",
       "date_read": "2020-03-07",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Poésies",
@@ -1077,8 +1077,8 @@
       "title": "Ariel: The Restored Edition",
       "author": "Sylvia Plath",
       "date_read": "2020-02-22",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Doamna Pylinska și secretul lui Chopin",
@@ -1112,29 +1112,29 @@
       "title": "La Princesse de Clèves",
       "author": "Madame de La Fayette",
       "date_read": "2020-02-06",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Moromeții I (Moromeții, #1)",
       "author": "Marin Preda",
       "date_read": "2020-02-02",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Adam și Eva",
       "author": "Liviu Rebreanu",
       "date_read": "2020-01-24",
-      "country": null,
-      "iso_n3": null
+      "country": "Austria",
+      "iso_n3": "040"
     },
     {
       "title": "Oh les beaux jours suivi de Pas moi",
       "author": "Samuel Beckett",
       "date_read": "2020-01-18",
-      "country": null,
-      "iso_n3": null
+      "country": "Ireland",
+      "iso_n3": "372"
     },
     {
       "title": "Ultima dorință (Seria Witcher, partea I)",
@@ -1154,8 +1154,8 @@
       "title": "High School",
       "author": "Tegan Quin",
       "date_read": "2020-01-04",
-      "country": null,
-      "iso_n3": null
+      "country": "Canada",
+      "iso_n3": "124"
     },
     {
       "title": "Toată lumina pe care nu o putem vedea",
@@ -1168,8 +1168,8 @@
       "title": "Povestea fără sfârșit",
       "author": "Michael Ende",
       "date_read": "2019-12-30",
-      "country": null,
-      "iso_n3": null
+      "country": "Germany",
+      "iso_n3": "276"
     },
     {
       "title": "20 de ani în Siberia",
@@ -1189,8 +1189,8 @@
       "title": "Hronicul și cântecul vârstelor",
       "author": "Lucian Blaga",
       "date_read": "2019-12-03",
-      "country": null,
-      "iso_n3": null
+      "country": "Austria",
+      "iso_n3": "040"
     },
     {
       "title": "Poezia romana moderna de la G. Bacovia la Emil Botta",
@@ -1203,22 +1203,22 @@
       "title": "Căutând-o pe Alaska",
       "author": "John Green",
       "date_read": "2019-11-06",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Scrisorar",
       "author": "Mikhail Shishkin",
       "date_read": "2019-10-18",
-      "country": null,
-      "iso_n3": null
+      "country": "Russia",
+      "iso_n3": "643"
     },
     {
       "title": "Eugenia",
       "author": "Lionel Duroy",
       "date_read": "2019-10-12",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Mesaj către tineri: redescoperiţi literatura!",
@@ -1238,8 +1238,8 @@
       "title": "The Testaments (The Handmaid's Tale, #2)",
       "author": "Margaret Atwood",
       "date_read": "2019-09-29",
-      "country": null,
-      "iso_n3": null
+      "country": "Canada",
+      "iso_n3": "124"
     },
     {
       "title": "Palatul Viselor",
@@ -1252,8 +1252,8 @@
       "title": "De La Littérature",
       "author": "Umberto Eco",
       "date_read": "2019-09-23",
-      "country": null,
-      "iso_n3": null
+      "country": "Italy",
+      "iso_n3": "380"
     },
     {
       "title": "Qu'est-ce que la littérature ?",
@@ -1266,8 +1266,8 @@
       "title": "Le plaisir du texte. Précédé de : Variations sur l'écriture",
       "author": "Roland Barthes",
       "date_read": "2019-09-12",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Şoareci şi oameni",
@@ -1287,22 +1287,22 @@
       "title": "Setea Muntelui de Sare",
       "author": "Marin Sorescu",
       "date_read": "2019-09-07",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Lector in fabula ou La coopération interprétative dans les textes narratifs",
       "author": "Umberto Eco",
       "date_read": "2019-09-03",
-      "country": null,
-      "iso_n3": null
+      "country": "Italy",
+      "iso_n3": "380"
     },
     {
       "title": "Clopotul de sticlă",
       "author": "Sylvia Plath",
       "date_read": "2019-09-03",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Gravitational Waves: How Einstein’s Spacetime Ripples Reveal the Secrets of the Universe",
@@ -1315,8 +1315,8 @@
       "title": "Mica mea inimă de om singuratic",
       "author": "Vlad Drăgoi",
       "date_read": "2019-08-31",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Rătăcirile fetei nesăbuite",
@@ -1329,8 +1329,8 @@
       "title": "Clar de femeie",
       "author": "Romain Gary",
       "date_read": "2019-08-18",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Cei doi domni din Bruxelles",
@@ -1364,43 +1364,43 @@
       "title": "În cafeneaua tinereţii pierdute",
       "author": "Patrick Modiano",
       "date_read": "2019-08-08",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Sapiens: A Brief History of Humankind",
       "author": "Yuval Noah Harari",
       "date_read": "2019-08-07",
-      "country": null,
-      "iso_n3": null
+      "country": "Israel",
+      "iso_n3": "376"
     },
     {
       "title": "Harta zilelor (Miss Peregrine's Peculiar Children, #4)",
       "author": "Ransom Riggs",
       "date_read": "2019-08-07",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Vântureasa de plastic",
       "author": "Marius Chivu",
       "date_read": "2019-08-06",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Du plus loin de l'oubli",
       "author": "Patrick Modiano",
       "date_read": "2019-07-24",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Emma G. Wildford",
       "author": "Zidrou",
       "date_read": "2019-07-20",
-      "country": null,
-      "iso_n3": null
+      "country": "Belgium",
+      "iso_n3": "056"
     },
     {
       "title": "De l'âme",
@@ -1413,15 +1413,15 @@
       "title": "Magicienii (Magicienii, #1)",
       "author": "Lev Grossman",
       "date_read": "2019-07-19",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Happa No Ko",
       "author": "Karin Serres",
       "date_read": "2019-07-13",
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Amoureuse Colette",
@@ -1448,8 +1448,8 @@
       "title": "O întâmplare ciudată cu un câine la miezul nopţii",
       "author": "Mark Haddon",
       "date_read": "2019-06-17",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Sfârșitul bibliotecii mele",
@@ -1462,8 +1462,8 @@
       "title": "Viața secretă a cadavrelor",
       "author": "Mary Roach",
       "date_read": "2019-06-02",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "The Color Purple (The Color Purple, #1)",
@@ -1483,15 +1483,15 @@
       "title": "Despre libertate",
       "author": "John Stuart Mill",
       "date_read": "2019-05-25",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Ciocoii vechi şi noi",
       "author": "Nicolae Filimon",
       "date_read": "2019-05-21",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "The Birth of Purgatory",
@@ -1525,8 +1525,8 @@
       "title": "Luna şi doi bani jumate",
       "author": "W. Somerset Maugham",
       "date_read": "2019-04-28",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Portocala mecanică",
@@ -1539,8 +1539,8 @@
       "title": "Abatorul cinci",
       "author": "Kurt Vonnegut Jr.",
       "date_read": "2019-04-21",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Fata din Zlataust",
@@ -1553,8 +1553,8 @@
       "title": "Leaganul pisicii",
       "author": "Kurt Vonnegut Jr.",
       "date_read": "2019-04-05",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Despre lucrurile cu adevarat importante",
@@ -1588,8 +1588,8 @@
       "title": "Il Principe/Principele",
       "author": "Niccolò Machiavelli",
       "date_read": "2019-03-07",
-      "country": null,
-      "iso_n3": null
+      "country": "Italy",
+      "iso_n3": "380"
     },
     {
       "title": "Iubirile lui Hemingway povestite de el însuși",
@@ -1637,22 +1637,22 @@
       "title": "Critice (Romanian Edition)",
       "author": "Titu Maiorescu",
       "date_read": "2019-02-15",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "444 de fragmente memorabile ale lui Neagu Djuvara",
       "author": "Neagu Djuvara",
       "date_read": "2019-02-15",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "The English Patient",
       "author": "Michael Ondaatje",
       "date_read": "2019-02-13",
-      "country": null,
-      "iso_n3": null
+      "country": "Canada",
+      "iso_n3": "124"
     },
     {
       "title": "Zaira",
@@ -1679,8 +1679,8 @@
       "title": "Scriitopia sau Fictionalizarea subiectului auctorial in discursul teoretic",
       "author": "Mihaela Ursa",
       "date_read": "2019-02-05",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Iubire amară",
@@ -1693,8 +1693,8 @@
       "title": "Freddie Mercury",
       "author": "Peter Freestone",
       "date_read": "2019-02-05",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Cei care pleacă și cei ce rămân",
@@ -1749,8 +1749,8 @@
       "title": "The Dark Labyrinth",
       "author": "Lawrence Durrell",
       "date_read": "2018-06-18",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Camera lui Giovanni",
@@ -1777,8 +1777,8 @@
       "title": "Băiatul cel nou (Hogarth Shakespeare)",
       "author": "Tracy Chevalier",
       "date_read": "2018-06-11",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Milarepa",
@@ -1791,8 +1791,8 @@
       "title": "Do Androids Dream of Electric Sheep?",
       "author": "Philip K. Dick",
       "date_read": "2018-05-27",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Domnișoara Christina. Șarpele",
@@ -1826,8 +1826,8 @@
       "title": "Un tramvai numit Dorinţă, Trandafirul tatuat, Pisica pe acoperişul fierbinte, Noaptea iguanei",
       "author": "Tennessee Williams",
       "date_read": "2018-04-07",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Music for Chameleons",
@@ -1840,15 +1840,15 @@
       "title": "Istoria iubirii",
       "author": "Simon May",
       "date_read": "2018-03-11",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Cititorul din pestera",
       "author": "Rui Zink",
       "date_read": "2018-03-11",
-      "country": null,
-      "iso_n3": null
+      "country": "Portugal",
+      "iso_n3": "620"
     },
     {
       "title": "Mic dejun la Tiffany",
@@ -1861,8 +1861,8 @@
       "title": "Dubla flacără: dragoste şi erotism",
       "author": "Octavio Paz",
       "date_read": "2018-03-02",
-      "country": null,
-      "iso_n3": null
+      "country": "Mexico",
+      "iso_n3": "484"
     },
     {
       "title": "Procesul",
@@ -1896,8 +1896,8 @@
       "title": "Accidentul",
       "author": "Mihail Sebastian",
       "date_read": "2018-02-12",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Iubire cu „i“ mic",
@@ -1952,8 +1952,8 @@
       "title": "Un șir infinit de țestoase",
       "author": "John Green",
       "date_read": "2017-12-26",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Fahrenheit 451",
@@ -1987,8 +1987,8 @@
       "title": "Norse Mythology",
       "author": "Neil Gaiman",
       "date_read": "2017-11-13",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Agonie și extaz (volumul 1)",
@@ -2001,8 +2001,8 @@
       "title": "Frankenstein",
       "author": "Mary Wollstonecraft Shelley",
       "date_read": "2017-10-04",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Sonete / Sonnets",
@@ -2057,8 +2057,8 @@
       "title": "Să nu mă părăsești",
       "author": "Kazuo Ishiguro",
       "date_read": "2017-08-22",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "O mie nouă sute optzeci și patru",
@@ -2078,15 +2078,15 @@
       "title": "Demigods and Magicians (Demigods & Magicians, #1-3)",
       "author": "Rick Riordan",
       "date_read": "2017-08-07",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Sabia Verii (Magnus Chase and the Gods of Asgard, #1)",
       "author": "Rick Riordan",
       "date_read": "2017-08-02",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Otrava iubirii",
@@ -2099,8 +2099,8 @@
       "title": "Fata cu cercel de perlă",
       "author": "Tracy Chevalier",
       "date_read": "2017-07-28",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Povestea lui Harap Alb",
@@ -2113,8 +2113,8 @@
       "title": "Sărmanul Dionis",
       "author": "Mihai Eminescu",
       "date_read": "2017-07-26",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Povestea porcului",
@@ -2141,8 +2141,8 @@
       "title": "Aleph",
       "author": "Jorge Luis Borges",
       "date_read": "2017-07-10",
-      "country": null,
-      "iso_n3": null
+      "country": "Argentina",
+      "iso_n3": "032"
     },
     {
       "title": "Vegetariana",
@@ -2155,15 +2155,15 @@
       "title": "Ion",
       "author": "Liviu Rebreanu",
       "date_read": "2017-07-06",
-      "country": null,
-      "iso_n3": null
+      "country": "Austria",
+      "iso_n3": "040"
     },
     {
       "title": "Marele uriaș prietenos",
       "author": "Roald Dahl",
       "date_read": "2017-07-01",
-      "country": null,
-      "iso_n3": null
+      "country": "Norway",
+      "iso_n3": "578"
     },
     {
       "title": "La ţigănci & Pe strada Mîntuleasa (The Gypsy / Mîntuleasa Street)",
@@ -2190,8 +2190,8 @@
       "title": "Oceanul de la capătul aleii",
       "author": "Neil Gaiman",
       "date_read": "2017-06-24",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Graffiti Moon",
@@ -2204,15 +2204,15 @@
       "title": "Lolita",
       "author": "Vladimir Nabokov",
       "date_read": "2017-06-22",
-      "country": null,
-      "iso_n3": null
+      "country": "Russia",
+      "iso_n3": "643"
     },
     {
       "title": "Tales of the Peculiar",
       "author": "Ransom Riggs",
       "date_read": "2017-06-19",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Măștile fricii",
@@ -2225,22 +2225,22 @@
       "title": "Maestrul de ceai",
       "author": "Yasushi Inoue",
       "date_read": "2017-06-15",
-      "country": null,
-      "iso_n3": null
+      "country": "Japan",
+      "iso_n3": "392"
     },
     {
       "title": "The Girl on the Train",
       "author": "Paula Hawkins",
       "date_read": "2017-06-13",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Pădurea spânzuraţilor",
       "author": "Liviu Rebreanu",
       "date_read": "2017-06-13",
-      "country": null,
-      "iso_n3": null
+      "country": "Austria",
+      "iso_n3": "040"
     },
     {
       "title": "Sutton",
@@ -2253,8 +2253,8 @@
       "title": "Tokyo Ghoul, Vol. 1 (Tokyo Ghoul, #1)",
       "author": "Sui Ishida",
       "date_read": "2017-06-01",
-      "country": null,
-      "iso_n3": null
+      "country": "Japan",
+      "iso_n3": "392"
     },
     {
       "title": "Teatru I - Cântăreaţa cheală. Lecţia",
@@ -2281,8 +2281,8 @@
       "title": "Povestea slujitoarei",
       "author": "Margaret Atwood",
       "date_read": "2017-05-16",
-      "country": null,
-      "iso_n3": null
+      "country": "Canada",
+      "iso_n3": "124"
     },
     {
       "title": "To Kill a Mockingbird",
@@ -2309,8 +2309,8 @@
       "title": "Orele",
       "author": "Michael Cunningham",
       "date_read": "2017-04-16",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Povestaşul",
@@ -2344,8 +2344,8 @@
       "title": "Profesorul și menajera",
       "author": "Yōko Ogawa",
       "date_read": "2017-03-25",
-      "country": null,
-      "iso_n3": null
+      "country": "Japan",
+      "iso_n3": "392"
     },
     {
       "title": "Adela",
@@ -2358,8 +2358,8 @@
       "title": "Romancierul naiv şi sentimental",
       "author": "Orhan Pamuk",
       "date_read": "2017-03-19",
-      "country": null,
-      "iso_n3": null
+      "country": "Turkey",
+      "iso_n3": "792"
     },
     {
       "title": "Romanul adolescentului miop",
@@ -2386,15 +2386,15 @@
       "title": "O mie de cocori",
       "author": "Yasunari Kawabata",
       "date_read": "2017-02-22",
-      "country": null,
-      "iso_n3": null
+      "country": "Japan",
+      "iso_n3": "392"
     },
     {
       "title": "Eleanor & Park",
       "author": "Rainbow Rowell",
       "date_read": "2017-02-16",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "De veghe în lanul de secară",
@@ -2407,8 +2407,8 @@
       "title": "Zei americani",
       "author": "Neil Gaiman",
       "date_read": "2017-02-05",
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Monsieur Ibrahim and the Flowers of the Qur'an",
@@ -2449,22 +2449,22 @@
       "title": "Craii de Curtea-Veche",
       "author": "Mateiu I. Caragiale",
       "date_read": "2017-01-11",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Studii despre iubire",
       "author": "José Ortega y Gasset",
       "date_read": "2017-01-05",
-      "country": null,
-      "iso_n3": null
+      "country": "Spain",
+      "iso_n3": "724"
     },
     {
       "title": "Banchetul sau Despre iubire",
       "author": "Plato",
       "date_read": "2017-01-03",
-      "country": null,
-      "iso_n3": null
+      "country": "Greece",
+      "iso_n3": "300"
     },
     {
       "title": "The Call of the Wild / White Fang",
@@ -2533,15 +2533,15 @@
       "title": "Divergent (Divergent, #1)",
       "author": "Veronica Roth",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Candide",
       "author": "Voltaire",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Mockingjay (The Hunger Games, #3)",
@@ -2554,8 +2554,8 @@
       "title": "The Golden Compass (His Dark Materials, #1)",
       "author": "Philip Pullman",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Dune (Dune #1)",
@@ -2568,8 +2568,8 @@
       "title": "Charlie and the Chocolate Factory (Charlie Bucket, #1)",
       "author": "Roald Dahl",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "Norway",
+      "iso_n3": "578"
     },
     {
       "title": "A Game of Thrones (A Song of Ice and Fire, #1)",
@@ -2596,8 +2596,8 @@
       "title": "The Fault in Our Stars",
       "author": "John Green",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Great Expectations",
@@ -2631,8 +2631,8 @@
       "title": "Alice’s Adventures in Wonderland / Through the Looking-Glass",
       "author": "Lewis Carroll",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
@@ -2645,8 +2645,8 @@
       "title": "The Giver (Giver, #1)",
       "author": "Lois Lowry",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Harry Potter and the Deathly Hallows (Harry Potter, #7)",
@@ -2680,22 +2680,22 @@
       "title": "Hanul Ancuței",
       "author": "Mihail Sadoveanu",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "A Thousand Splendid Suns",
       "author": "Khaled Hosseini",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "The Adventures of Huckleberry Finn (Adventures of Tom and Huck, #2)",
       "author": "Mark Twain",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Romeo and Juliet",
@@ -2708,8 +2708,8 @@
       "title": "The Book Thief",
       "author": "Markus Zusak",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "Australia",
+      "iso_n3": "036"
     },
     {
       "title": "Toporișca (Brian's Saga, #1)",
@@ -2722,8 +2722,8 @@
       "title": "Tabăra (Holes, #1)",
       "author": "Louis Sachar",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Harry Potter and the Cursed Child: Parts One and Two (Harry Potter, #8)",
@@ -2743,15 +2743,15 @@
       "title": "The Bone Season (The Bone Season, #1)",
       "author": "Samantha Shannon",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Me Before You (Me Before You, #1)",
       "author": "Jojo Moyes",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Băiatul cu pijamale în dungi",
@@ -2771,8 +2771,8 @@
       "title": "Matilda",
       "author": "Roald Dahl",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "Norway",
+      "iso_n3": "578"
     },
     {
       "title": "The Catcher in the Rye",
@@ -2785,8 +2785,8 @@
       "title": "Orașul pustiu (Miss Peregrine's Peculiar Children, #2)",
       "author": "Ransom Riggs",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Gargantua and Pantagruel",
@@ -2820,22 +2820,22 @@
       "title": "After You (Me Before You, #2)",
       "author": "Jojo Moyes",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Extremely Loud & Incredibly Close",
       "author": "Jonathan Safran Foer",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "The Kite Runner",
       "author": "Khaled Hosseini",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
@@ -2862,8 +2862,8 @@
       "title": "Gulliver’s Travels",
       "author": "Jonathan Swift",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "Ireland",
+      "iso_n3": "372"
     },
     {
       "title": "Oliver Twist",
@@ -2883,15 +2883,15 @@
       "title": "The Jungle Books",
       "author": "Rudyard Kipling",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "The Adventures of Tom Sawyer",
       "author": "Mark Twain",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "The Metamorphosis",
@@ -2904,8 +2904,8 @@
       "title": "Le Petit Nicolas",
       "author": "René Goscinny",
       "date_read": null,
-      "country": null,
-      "iso_n3": null
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Emil and the Detectives",
