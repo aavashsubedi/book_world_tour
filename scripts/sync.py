@@ -50,7 +50,7 @@ HISTORICAL_QID = {
     "Q131964": ("Austria", "040"),         # Austrian Empire
     "Q33946":  ("Czechia", "203"),         # Czechoslovakia
     "Q36704":  ("Serbia", "688"),          # Yugoslavia
-    "Q172107": ("Germany", "276"),         # Kingdom of Prussia
+    "Q27306":  ("Germany", "276"),         # Kingdom of Prussia
     "Q43287":  ("Germany", "276"),         # German Empire
     "Q41304":  ("Germany", "276"),         # Weimar Republic
     "Q7318":   ("Germany", "276"),         # Nazi Germany
@@ -58,7 +58,7 @@ HISTORICAL_QID = {
     "Q174193": ("United Kingdom", "826"),  # UK of Great Britain and Ireland
     "Q172579": ("Italy", "380"),           # Kingdom of Italy
     "Q8733":   ("China", "156"),           # Qing dynasty
-    "Q13426199": ("Turkey", "792"),        # Ottoman Empire
+    "Q12560":  ("Turkey", "792"),          # Ottoman Empire
     "Q1747689": ("Italy", "380"),          # Ancient Rome
     "Q2277":    ("Italy", "380"),          # Roman Empire
     "Q17167":   ("Italy", "380"),          # Roman Republic
@@ -241,9 +241,12 @@ def _resolve_from_qids(qids, author):
     """Best human among these candidates -> {'country','iso_n3','source'} or None."""
     if not qids:
         return None
+    # "mul" as well as "en": Wikidata moved names that are spelled the same in
+    # every language to a shared multilingual label, leaving the English one
+    # empty — Gabriel Garcia Marquez and John Wyndham both live there now.
     ents = http_get_json(
         f"{WIKIDATA_API}?action=wbgetentities&ids={'|'.join(qids)}"
-        "&props=claims|descriptions|labels|aliases&languages=en&format=json"
+        "&props=claims|descriptions|labels|aliases&languages=en|mul&format=json"
     )["entities"]
 
     # Humans whose name actually matches, writers first, search rank as the
@@ -255,11 +258,14 @@ def _resolve_from_qids(qids, author):
         ent = ents.get(qid, {})
         if "Q5" not in _claim_ids(ent, "P31"):  # instance of: human
             continue
+        names = []
         labels = ent.get("labels") or {}
+        if isinstance(labels, dict):
+            names += [(v or {}).get("value", "") for v in labels.values()]
         aliases = ent.get("aliases") or {}
-        names = [(labels.get("en") or {}).get("value", "")] if isinstance(labels, dict) else []
         if isinstance(aliases, dict):
-            names += [a.get("value", "") for a in (aliases.get("en") or [])]
+            for group in aliases.values():
+                names += [a.get("value", "") for a in (group or [])]
         if not any(n and _names_match(n, author) for n in names):
             continue
         desc = ent.get("descriptions", {}).get("en", {}).get("value", "").lower()
@@ -270,23 +276,49 @@ def _resolve_from_qids(qids, author):
     ranked.sort()
 
     for _, _, qid, ent in ranked:
-        for country_qid in _claim_ids(ent, "P27"):  # country of citizenship
+        citizenships = _claim_ids(ent, "P27")  # country of citizenship
+
+        # 1. A modern state the author actually held citizenship of. Wilde is
+        #    Irish, not "UK of Great Britain and Ireland".
+        for country_qid in citizenships:
+            if country_qid in HISTORICAL_QID:
+                continue
             info = _country_info(country_qid)
             if info:
                 return {"country": info[0], "iso_n3": info[1],
                         "source": "wikidata", "qid": qid}
-        # Ancient and stateless authors have no citizenship — fall back to the
-        # country their birthplace sits in.
+
+        # 2. Birthplace. More precise than a defunct multinational empire —
+        #    Slavici's only citizenship is Austria-Hungary, but he was born in
+        #    Transylvania and is a Romanian writer. Also covers ancient and
+        #    stateless authors, who have no citizenship at all.
         for place_qid in _claim_ids(ent, "P19"):  # place of birth
             place = http_get_json(
                 f"{WIKIDATA_API}?action=wbgetentities&ids={place_qid}"
                 "&props=claims&languages=en&format=json"
             )["entities"][place_qid]
-            for country_qid in _claim_ids(place, "P17"):  # country
+            # A city's P17 lists every state that ever held it, oldest first —
+            # Kyiv runs from Kievan Rus' to Ukraine. Take the modern one.
+            place_countries = _claim_ids(place, "P17")
+            for country_qid in place_countries:
+                if country_qid in HISTORICAL_QID:
+                    continue
                 info = _country_info(country_qid)
                 if info:
                     return {"country": info[0], "iso_n3": info[1],
                             "source": "wikidata-birthplace", "qid": qid}
+            for country_qid in place_countries:
+                if country_qid in HISTORICAL_QID:
+                    name, iso = HISTORICAL_QID[country_qid]
+                    return {"country": name, "iso_n3": iso,
+                            "source": "wikidata-birthplace", "qid": qid}
+
+        # 3. Last resort: the empire itself, mapped to a successor state.
+        for country_qid in citizenships:
+            if country_qid in HISTORICAL_QID:
+                name, iso = HISTORICAL_QID[country_qid]
+                return {"country": name, "iso_n3": iso,
+                        "source": "wikidata-historical", "qid": qid}
     return None
 
 
