@@ -20,6 +20,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+import unicodedata
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
@@ -58,6 +59,11 @@ HISTORICAL_QID = {
     "Q172579": ("Italy", "380"),           # Kingdom of Italy
     "Q8733":   ("China", "156"),           # Qing dynasty
     "Q13426199": ("Turkey", "792"),        # Ottoman Empire
+    "Q1747689": ("Italy", "380"),          # Ancient Rome
+    "Q2277":    ("Italy", "380"),          # Roman Empire
+    "Q17167":   ("Italy", "380"),          # Roman Republic
+    "Q11772":   ("Greece", "300"),         # Ancient Greece
+    "Q12544":   ("Turkey", "792"),         # Byzantine Empire
 }
 
 # Occupations that mark a search hit as the author we're after rather than a
@@ -137,6 +143,9 @@ def load_csv(csv_path):
 
 def load_rss(rss_url):
     books = []
+    if not rss_url:
+        print("No rss_url configured — CSV only (add one for daily auto-updates)")
+        return books
     try:
         xml_text = http_get_text(rss_url)
         root = ET.fromstring(xml_text)
@@ -205,59 +214,117 @@ def _country_info(qid):
     return result
 
 
+def _name_key(name):
+    """Comparable form of a name: no accents, no punctuation, no spacing.
+
+    "M.L. Rio" and "M. L. Rio" both become "mlrio".
+    """
+    stripped = "".join(c for c in unicodedata.normalize("NFKD", name)
+                       if not unicodedata.combining(c))
+    return "".join(c for c in stripped.lower() if c.isalnum())
+
+
+def _name_tokens(name):
+    """Sorted name parts, so a reversed order still matches.
+
+    Wikidata files some authors under their local convention — Min Jin Lee is
+    labelled "Lee Min Jin".
+    """
+    return tuple(sorted(k for k in (_name_key(t) for t in re.split(r"[\s,]+", name)) if k))
+
+
+def _names_match(a, b):
+    return _name_key(a) == _name_key(b) or _name_tokens(a) == _name_tokens(b)
+
+
+def _resolve_from_qids(qids, author):
+    """Best human among these candidates -> {'country','iso_n3','source'} or None."""
+    if not qids:
+        return None
+    ents = http_get_json(
+        f"{WIKIDATA_API}?action=wbgetentities&ids={'|'.join(qids)}"
+        "&props=claims|descriptions|labels|aliases&languages=en&format=json"
+    )["entities"]
+
+    # Humans whose name actually matches, writers first, search rank as the
+    # tie-break. The name check is what stops a candidate with no country from
+    # handing the query off to an unrelated person further down the list —
+    # that is how "M.L. Rio" once resolved to Spain via Ramón Mercader.
+    ranked = []
+    for rank, qid in enumerate(qids):
+        ent = ents.get(qid, {})
+        if "Q5" not in _claim_ids(ent, "P31"):  # instance of: human
+            continue
+        labels = ent.get("labels") or {}
+        aliases = ent.get("aliases") or {}
+        names = [(labels.get("en") or {}).get("value", "")] if isinstance(labels, dict) else []
+        if isinstance(aliases, dict):
+            names += [a.get("value", "") for a in (aliases.get("en") or [])]
+        if not any(n and _names_match(n, author) for n in names):
+            continue
+        desc = ent.get("descriptions", {}).get("en", {}).get("value", "").lower()
+        writes = bool(set(_claim_ids(ent, "P106")) & WRITER_OCCUPATIONS) or any(
+            w in desc for w in ("writer", "author", "novelist", "poet",
+                                "playwright", "essayist", "journalist"))
+        ranked.append((0 if writes else 1, rank, qid, ent))
+    ranked.sort()
+
+    for _, _, qid, ent in ranked:
+        for country_qid in _claim_ids(ent, "P27"):  # country of citizenship
+            info = _country_info(country_qid)
+            if info:
+                return {"country": info[0], "iso_n3": info[1],
+                        "source": "wikidata", "qid": qid}
+        # Ancient and stateless authors have no citizenship — fall back to the
+        # country their birthplace sits in.
+        for place_qid in _claim_ids(ent, "P19"):  # place of birth
+            place = http_get_json(
+                f"{WIKIDATA_API}?action=wbgetentities&ids={place_qid}"
+                "&props=claims&languages=en&format=json"
+            )["entities"][place_qid]
+            for country_qid in _claim_ids(place, "P17"):  # country
+                info = _country_info(country_qid)
+                if info:
+                    return {"country": info[0], "iso_n3": info[1],
+                            "source": "wikidata-birthplace", "qid": qid}
+    return None
+
+
+# Goodreads uses these where an author is unknown; they match real Wikidata
+# people of the same name, so never look them up.
+NON_AUTHORS = {"anonymous", "unknown", "various", "variousauthors", "anon",
+               "naauthor", "notavailable", "naa", "collective", "naauthors"}
+
+
 def wikidata_resolve_author(author):
     """Return {'country', 'iso_n3', 'source'} or None.
 
-    Uses the regular Wikidata API (the SPARQL endpoint is rate-limited far more
-    aggressively). Two requests per author: search by name, then fetch all
-    candidates at once and pick the best human — preferring one who actually
-    writes, since plain search rank happily returns a painter or a bird genus
-    for names like "Homer" or "Sappho".
+    Uses the regular Wikidata API — the SPARQL endpoint is rate-limited far
+    more aggressively. Candidates are ranked by us rather than trusted from
+    search order, since plain search happily returns a painter or a genus of
+    birds for names like "Homer" or "Sappho".
     """
+    if _name_key(author) in NON_AUTHORS:
+        return None
     try:
         search = http_get_json(
             f"{WIKIDATA_API}?action=wbsearchentities&format=json&language=en"
             "&type=item&limit=5&search=" + urllib.parse.quote(author)
         )
-        qids = [h["id"] for h in search.get("search", [])]
-        if not qids:
-            return None
+        result = _resolve_from_qids([h["id"] for h in search.get("search", [])], author)
+        if result:
+            return result
 
-        ents = http_get_json(
-            f"{WIKIDATA_API}?action=wbgetentities&ids={'|'.join(qids)}"
-            "&props=claims|descriptions&languages=en&format=json"
-        )["entities"]
-
-        # Humans only, writers first, search rank as the tie-break.
-        ranked = []
-        for rank, qid in enumerate(qids):
-            ent = ents.get(qid, {})
-            if "Q5" not in _claim_ids(ent, "P31"):  # instance of: human
-                continue
-            desc = ent.get("descriptions", {}).get("en", {}).get("value", "").lower()
-            writes = bool(set(_claim_ids(ent, "P106")) & WRITER_OCCUPATIONS) or any(
-                w in desc for w in ("writer", "author", "novelist", "poet",
-                                    "playwright", "essayist", "journalist"))
-            ranked.append((0 if writes else 1, rank, qid, ent))
-        ranked.sort()
-
-        for _, _, _, ent in ranked:
-            for country_qid in _claim_ids(ent, "P27"):  # country of citizenship
-                info = _country_info(country_qid)
-                if info:
-                    return {"country": info[0], "iso_n3": info[1], "source": "wikidata"}
-            # Ancient and stateless authors have no citizenship — fall back to
-            # the country their birthplace sits in.
-            for place_qid in _claim_ids(ent, "P19"):  # place of birth
-                place = http_get_json(
-                    f"{WIKIDATA_API}?action=wbgetentities&ids={place_qid}"
-                    "&props=claims&languages=en&format=json"
-                )["entities"][place_qid]
-                for country_qid in _claim_ids(place, "P17"):  # country
-                    info = _country_info(country_qid)
-                    if info:
-                        return {"country": info[0], "iso_n3": info[1],
-                                "source": "wikidata-birthplace"}
+        # Label search ranks poorly for some names — "Min Jin Lee" returns three
+        # ORCID researcher stubs and never the novelist. Full-text search ranks
+        # by notability, so retry through it restricted to humans.
+        query = urllib.parse.quote(f"{author} haswbstatement:P31=Q5")
+        cirrus = http_get_json(
+            f"{WIKIDATA_API}?action=query&list=search&srsearch={query}"
+            "&srlimit=4&format=json"
+        )
+        return _resolve_from_qids(
+            [h["title"] for h in cirrus.get("query", {}).get("search", [])], author)
     except Exception as e:
         print(f"  wikidata error for {author}: {e}", file=sys.stderr)
     return None

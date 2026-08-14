@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T07:24:13Z",
+  "generated": "2026-08-14T16:03:28Z",
   "person": "Alex",
   "books": [
     {
@@ -1000,8 +1000,8 @@
       "title": "Despre liniştea spiritului. Despre tihnă",
       "author": "Seneca",
       "date_read": "2020-04-25",
-      "country": null,
-      "iso_n3": null
+      "country": "Italy",
+      "iso_n3": "380"
     },
     {
       "title": "Play It as It Lays",
@@ -2246,8 +2246,8 @@
       "title": "Sutton",
       "author": "J.R. Moehringer",
       "date_read": "2017-06-02",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Tokyo Ghoul, Vol. 1 (Tokyo Ghoul, #1)",
@@ -2302,8 +2302,8 @@
       "title": "Dulcele bar",
       "author": "J.R. Moehringer",
       "date_read": "2017-04-20",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Orele",

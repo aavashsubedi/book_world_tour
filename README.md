@@ -13,19 +13,24 @@ any Goodreads CSVs you commit) are visible to anyone.
 1. **Push this repo to GitHub** (public repo).
 2. **Enable GitHub Pages**: repo → Settings → Pages → Source: *Deploy from a
    branch* → `main` / root.
-3. **Add people** in `config.json` — one entry per person. The `rss_url` comes
-   from their Goodreads profile: `https://www.goodreads.com/review/list_rss/<goodreads-user-id>?shelf=read`
-   (their shelf must be public):
+3. **Add people** in `config.json` — one entry per person. `rss_url` is what
+   keeps a map updating daily; take the Goodreads user id from their profile
+   URL (their shelf must be public). It's optional — a person with only a CSV
+   still gets a map, it just won't update until the CSV is replaced.
 
    ```json
    { "people": [
-     { "id": "aavash", "name": "Aavash", "rss_url": "https://www.goodreads.com/review/list_rss/77277889?shelf=read" }
+     { "id": "aavash", "name": "Aavash", "rss_url": "https://www.goodreads.com/review/list_rss/77277889?shelf=read" },
+     { "id": "jordan", "name": "Jordan" }
    ] }
    ```
-4. **Backfill full history** (optional but recommended — RSS only covers the
-   ~100 most recent books): Goodreads → My Books → Import/Export → Export
-   Library, save as `data/goodreads_export_<id>.csv` (matching the person's
-   `id`), commit and push. The sync workflow runs automatically on that push.
+4. **Backfill full history** (recommended — RSS only covers the ~100 most
+   recent books): Goodreads → My Books → Import/Export → Export Library, save
+   as `data/goodreads_export_<id>.csv` (matching the person's `id`), commit and
+   push. The sync workflow runs automatically on that push.
+
+   Author→country lookups are shared across everyone, so each new person only
+   costs lookups for authors nobody has read yet.
 5. **(Optional) Gemini fallback**: most authors resolve via Wikidata for free.
    For the rest, add a free Gemini API key as a repo secret named
    `GEMINI_API_KEY` (repo → Settings → Secrets and variables → Actions).

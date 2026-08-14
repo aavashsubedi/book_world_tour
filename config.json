@@ -9,6 +9,11 @@
       "id": "alex",
       "name": "Alex",
       "rss_url": "https://www.goodreads.com/review/list_rss/64266145?shelf=read"
+    },
+    {
+      "id": "jordan",
+      "name": "Jordan",
+      "rss_url": "https://www.goodreads.com/review/list_rss/151924636?shelf=read"
     }
   ]
 }

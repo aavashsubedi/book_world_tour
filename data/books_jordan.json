@@ -1,0 +1,1483 @@
+{
+  "generated": "2026-08-14T16:06:37Z",
+  "person": "Jordan",
+  "books": [
+    {
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "date_read": "2026-08-03",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Bullfight (Pushkin Press Classics)",
+      "author": "Yasushi Inoue",
+      "date_read": "2026-07-29",
+      "country": "Japan",
+      "iso_n3": "392"
+    },
+    {
+      "title": "When We Were Orphans",
+      "author": "Kazuo Ishiguro",
+      "date_read": "2026-07-29",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Season of Migration to the North",
+      "author": "Tayeb Salih",
+      "date_read": "2026-05-21",
+      "country": "Sudan",
+      "iso_n3": "729"
+    },
+    {
+      "title": "Pachinko",
+      "author": "Min Jin Lee",
+      "date_read": "2026-04-12",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "A Month in the Country",
+      "author": "J.L. Carr",
+      "date_read": "2026-02-05",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Kitchen",
+      "author": "Banana Yoshimoto",
+      "date_read": "2026-02-01",
+      "country": "Japan",
+      "iso_n3": "392"
+    },
+    {
+      "title": "Ice",
+      "author": "Anna Kavan",
+      "date_read": "2026-01-27",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Revenge",
+      "author": "Yōko Ogawa",
+      "date_read": "2026-01-14",
+      "country": "Japan",
+      "iso_n3": "392"
+    },
+    {
+      "title": "Heat Wave",
+      "author": "Penelope Lively",
+      "date_read": "2026-01-09",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Orchards of Basra",
+      "author": "Mansoura Ez-Eldin",
+      "date_read": "2025-12-26",
+      "country": "Egypt",
+      "iso_n3": "818"
+    },
+    {
+      "title": "Demian",
+      "author": "Hermann Hesse",
+      "date_read": "2025-11-11",
+      "country": "Switzerland",
+      "iso_n3": "756"
+    },
+    {
+      "title": "Behind the Painting",
+      "author": "Siburapha",
+      "date_read": "2025-11-03",
+      "country": "Thailand",
+      "iso_n3": "764"
+    },
+    {
+      "title": "The Adventures of China Iron",
+      "author": "Gabriela Cabezón Cámara",
+      "date_read": "2025-10-04",
+      "country": "Argentina",
+      "iso_n3": "032"
+    },
+    {
+      "title": "Dead-End Memories",
+      "author": "Banana Yoshimoto",
+      "date_read": "2025-09-29",
+      "country": "Japan",
+      "iso_n3": "392"
+    },
+    {
+      "title": "Sinopticon: A Celebration of Chinese Science Fiction",
+      "author": "Xueting C. Ni",
+      "date_read": "2025-08-25",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "The Dangers of Smoking in Bed",
+      "author": "Mariana Enriquez",
+      "date_read": "2025-08-25",
+      "country": "Argentina",
+      "iso_n3": "032"
+    },
+    {
+      "title": "Greenteeth",
+      "author": "Molly O'Neill",
+      "date_read": "2025-06-03",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "When I Sing, Mountains Dance",
+      "author": "Irene Solà",
+      "date_read": "2025-05-03",
+      "country": "Spain",
+      "iso_n3": "724"
+    },
+    {
+      "title": "Orbital",
+      "author": "Samantha Harvey",
+      "date_read": "2025-03-20",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Sailor Who Fell from Grace With the Sea",
+      "author": "Yukio Mishima",
+      "date_read": "2025-03-14",
+      "country": "Japan",
+      "iso_n3": "392"
+    },
+    {
+      "title": "Tao Te Ching",
+      "author": "Lao Tzu",
+      "date_read": "2025-03-06",
+      "country": "People's Republic of China",
+      "iso_n3": "156"
+    },
+    {
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "date_read": "2025-03-05",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Dune Messiah (Dune, #2)",
+      "author": "Frank Herbert",
+      "date_read": "2025-02-11",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Vegetarian",
+      "author": "Han Kang",
+      "date_read": "2025-01-01",
+      "country": "South Korea",
+      "iso_n3": "410"
+    },
+    {
+      "title": "Annihilation (Southern Reach #1)",
+      "author": "Jeff Vandermeer",
+      "date_read": "2024-12-29",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Dune (Dune, #1)",
+      "author": "Frank Herbert",
+      "date_read": "2024-12-29",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Caging Skies",
+      "author": "Christine Leunens",
+      "date_read": "2024-11-17",
+      "country": "Belgium",
+      "iso_n3": "056"
+    },
+    {
+      "title": "The Secret History",
+      "author": "Donna Tartt",
+      "date_read": "2024-11-03",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "At the Mountains of Madness",
+      "author": "H.P. Lovecraft",
+      "date_read": "2024-10-31",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Moustache",
+      "author": "Emmanuel Carrère",
+      "date_read": "2024-10-23",
+      "country": "France",
+      "iso_n3": "250"
+    },
+    {
+      "title": "Giovanni’s Room",
+      "author": "James Baldwin",
+      "date_read": "2024-10-07",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Red Dust, White Snow",
+      "author": "Pan Huiting",
+      "date_read": "2024-10-04",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "The Poppy War (The Poppy War, #1)",
+      "author": "R.F. Kuang",
+      "date_read": "2024-09-22",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Class Trip (Vintage Editions)",
+      "author": "Emmanuel Carrère",
+      "date_read": "2024-09-20",
+      "country": "France",
+      "iso_n3": "250"
+    },
+    {
+      "title": "The Three-Body Problem (Remembrance of Earth’s Past, #1)",
+      "author": "Liu Cixin",
+      "date_read": "2024-09-20",
+      "country": "People's Republic of China",
+      "iso_n3": "156"
+    },
+    {
+      "title": "Iron Widow (Iron Widow, #1)",
+      "author": "Xiran Jay Zhao",
+      "date_read": "2024-08-17",
+      "country": "Canada",
+      "iso_n3": "124"
+    },
+    {
+      "title": "Yellowface",
+      "author": "R.F. Kuang",
+      "date_read": "2024-08-03",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Silence of the Girls",
+      "author": "Pat Barker",
+      "date_read": "2024-07-23",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Things Fall Apart",
+      "author": "Chinua Achebe",
+      "date_read": "2024-06-30",
+      "country": "Nigeria",
+      "iso_n3": "566"
+    },
+    {
+      "title": "Greek Lessons",
+      "author": "Han Kang",
+      "date_read": "2024-06-25",
+      "country": "South Korea",
+      "iso_n3": "410"
+    },
+    {
+      "title": "The Seven Moons of Maali Almeida",
+      "author": "Shehan Karunatilaka",
+      "date_read": "2024-06-20",
+      "country": "Sri Lanka",
+      "iso_n3": "144"
+    },
+    {
+      "title": "The Premonition",
+      "author": "Banana Yoshimoto",
+      "date_read": "2024-04-16",
+      "country": "Japan",
+      "iso_n3": "392"
+    },
+    {
+      "title": "Remarkably Bright Creatures",
+      "author": "Shelby Van Pelt",
+      "date_read": "2024-03-07",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Babel",
+      "author": "R.F. Kuang",
+      "date_read": "2024-02-06",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Shy",
+      "author": "Max Porter",
+      "date_read": "2024-01-23",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Man Who Mistook His Wife for a Hat",
+      "author": "Oliver Sacks",
+      "date_read": "2024-01-22",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Death of Vivek Oji",
+      "author": "Akwaeke Emezi",
+      "date_read": "2023-12-21",
+      "country": "Nigeria",
+      "iso_n3": "566"
+    },
+    {
+      "title": "Circe",
+      "author": "Madeline Miller",
+      "date_read": "2023-10-24",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "A Different Sea",
+      "author": "Claudio Magris",
+      "date_read": "2023-09-11",
+      "country": "Italy",
+      "iso_n3": "380"
+    },
+    {
+      "title": "Flatland",
+      "author": "Edwin A. Abbott",
+      "date_read": "2023-09-01",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Trial",
+      "author": "Franz Kafka",
+      "date_read": "2023-08-30",
+      "country": "Czechoslovakia",
+      "iso_n3": "203"
+    },
+    {
+      "title": "Bach Cello Suites",
+      "author": "Steven Isserlis",
+      "date_read": "2023-08-20",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Kraken",
+      "author": "China Miéville",
+      "date_read": "2023-08-17",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Watching the English",
+      "author": "Kate Fox",
+      "date_read": "2023-08-17",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Zoologist's Guide to the Galaxy: What Animals on Earth Reveal about Aliens – and Ourselves",
+      "author": "Arik Kershenbaum",
+      "date_read": "2023-07-23",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "On Earth We’re Briefly Gorgeous",
+      "author": "Ocean Vuong",
+      "date_read": "2023-04-08",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Five People You Meet in Heaven",
+      "author": "Mitch Albom",
+      "date_read": "2022-09-19",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Other Minds",
+      "author": "Peter Godfrey-Smith",
+      "date_read": "2022-08-14",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The History of Mathematics: A Very Short Introduction",
+      "author": "Jacqueline A. Stedall",
+      "date_read": "2022-07-11",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Magic Feather Effect: The Science of Alternative Medicine and the Surprising Power of Belief",
+      "author": "Melanie Warner",
+      "date_read": "2022-07-06",
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "Hood Feminism: Notes from the Women That a Movement Forgot",
+      "author": "Mikki Kendall",
+      "date_read": "2022-06-05",
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Double Cross (Noughts & Crosses, #4)",
+      "author": "Malorie Blackman",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Checkmate (Noughts & Crosses, #3)",
+      "author": "Malorie Blackman",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Knife Edge (Noughts & Crosses, #2)",
+      "author": "Malorie Blackman",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Naughts & Crosses (Noughts & Crosses, #1)",
+      "author": "Malorie Blackman",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Ghost Hunter (Chronicles of Ancient Darkness, #6)",
+      "author": "Michelle Paver",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Oath Breaker (Chronicles of Ancient Darkness, #5)",
+      "author": "Michelle Paver",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Outcast (Chronicles of Ancient Darkness, #4)",
+      "author": "Michelle Paver",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Soul Eater (Chronicles of Ancient Darkness, #3)",
+      "author": "Michelle Paver",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Spirit Walker (Chronicles of Ancient Darkness #2)",
+      "author": "Michelle Paver",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Wolf Brother (Chronicles of Ancient Darkness #1)",
+      "author": "Michelle Paver",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Clockwork Princess (The Infernal Devices, #3)",
+      "author": "Cassandra Clare",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Clockwork Prince (The Infernal Devices, #2)",
+      "author": "Cassandra Clare",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Clockwork Angel (The Infernal Devices, #1)",
+      "author": "Cassandra Clare",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "City of Heavenly Fire (The Mortal Instruments, #6)",
+      "author": "Cassandra Clare",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "City of Lost Souls (The Mortal Instruments, #5)",
+      "author": "Cassandra Clare",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "City of Fallen Angels (The Mortal Instruments, #4)",
+      "author": "Cassandra Clare",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "City of Glass (The Mortal Instruments, #3)",
+      "author": "Cassandra Clare",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "City of Ashes (The Mortal Instruments, #2)",
+      "author": "Cassandra Clare",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "City of Bones (The Mortal Instruments, #1)",
+      "author": "Cassandra Clare",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Inheritance (The Inheritance Cycle, #4)",
+      "author": "Christopher Paolini",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Brisingr (The Inheritance Cycle, #3)",
+      "author": "Christopher Paolini",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Eldest (The Inheritance Cycle, #2)",
+      "author": "Christopher Paolini",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Eragon (The Inheritance Cycle #1)",
+      "author": "Christopher Paolini",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Hound of the Baskervilles (Sherlock Holmes, #5)",
+      "author": "Arthur Conan Doyle",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Alice’s Adventures in Wonderland / Through the Looking-Glass",
+      "author": "Lewis Carroll",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Rest of Us Just Live Here",
+      "author": "Patrick Ness",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "More Than This",
+      "author": "Patrick Ness",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Monsters of Men (Chaos Walking, #3)",
+      "author": "Patrick Ness",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Ask and the Answer (Chaos Walking, #2)",
+      "author": "Patrick Ness",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Knife of Never Letting Go (Chaos Walking, #1)",
+      "author": "Patrick Ness",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Two Boys Kissing",
+      "author": "David Levithan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Will Grayson, Will Grayson",
+      "author": "John Green",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Paper Towns",
+      "author": "John Green",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Allegiant (Divergent, #3)",
+      "author": "Veronica Roth",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Divergent (Divergent, #1)",
+      "author": "Veronica Roth",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Insurgent (Divergent, #2)",
+      "author": "Veronica Roth",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Looking for Alaska",
+      "author": "John Green",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Serpent's Shadow (The Kane Chronicles, #3)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Throne of Fire (The Kane Chronicles, #2)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Blood of Olympus (The Heroes of Olympus, #5)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Red Pyramid (The Kane Chronicles, #1)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The House of Hades (The Heroes of Olympus, #4)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Son of Neptune (The Heroes of Olympus, #2)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Mark of Athena (The Heroes of Olympus, #3)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Lost Hero (The Heroes of Olympus, #1)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Last Olympian (Percy Jackson and the Olympians, #5)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Battle of the Labyrinth (Percy Jackson and the Olympians, #4)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Titan’s Curse (Percy Jackson and the Olympians, #3)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Sea of Monsters (Percy Jackson and the Olympians, #2)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Lightning Thief (Percy Jackson and the Olympians, #1)",
+      "author": "Rick Riordan",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Fault in Our Stars",
+      "author": "John Green",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Frankenstein: The 1818 Text",
+      "author": "Mary Wollstonecraft Shelley",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Atticus the Storyteller",
+      "author": "Lucy Coats",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Pinhoe Egg  (Chrestomanci, #6)",
+      "author": "Diana Wynne Jones",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Conrad's Fate (Chrestomanci, #5)",
+      "author": "Diana Wynne Jones",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Magicians of Caprona (Chrestomanci, #4)",
+      "author": "Diana Wynne Jones",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Witch Week (Chrestomanci, #3)",
+      "author": "Diana Wynne Jones",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Lives of Christopher Chant (Chrestomanci, #2)",
+      "author": "Diana Wynne Jones",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Charmed Life (Chrestomanci, #1)",
+      "author": "Diana Wynne Jones",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "House of Many Ways (Howl's Moving Castle, #3)",
+      "author": "Diana Wynne Jones",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Castle in the Air (Howl's Moving Castle, #2)",
+      "author": "Diana Wynne Jones",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Howl's Moving Castle (Howl's Moving Castle, #1)",
+      "author": "Diana Wynne Jones",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "All the Birds, Singing",
+      "author": "Evie Wyld",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Twelve Angry Men",
+      "author": "Reginald Rose",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "I'm the King of the Castle",
+      "author": "Susan Hill",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Open City",
+      "author": "Teju Cole",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Half Wild (The Half Bad Trilogy, #2)",
+      "author": "Sally Green",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "I Capture the Castle",
+      "author": "Dodie Smith",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Rubyfruit Jungle",
+      "author": "Rita Mae Brown",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Man's Search for Meaning",
+      "author": "Viktor E. Frankl",
+      "date_read": null,
+      "country": "Austria",
+      "iso_n3": "040"
+    },
+    {
+      "title": "White Teeth",
+      "author": "Zadie Smith",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "I Am Malala: The Story of the Girl Who Stood Up for Education and Was Shot by the Taliban",
+      "author": "Malala Yousafzai",
+      "date_read": null,
+      "country": "Pakistan",
+      "iso_n3": "586"
+    },
+    {
+      "title": "The 100-Year-Old Man Who Climbed Out the Window and Disappeared (Hundred-Year-Old Man, #1)",
+      "author": "Jonas Jonasson",
+      "date_read": null,
+      "country": "Sweden",
+      "iso_n3": "752"
+    },
+    {
+      "title": "Miss Peregrine's Home for Peculiar Children (Miss Peregrine's Peculiar Children, #1)",
+      "author": "Ransom Riggs",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "date_read": null,
+      "country": "Australia",
+      "iso_n3": "036"
+    },
+    {
+      "title": "The Da Vinci Code (Robert Langdon, #2)",
+      "author": "Dan Brown",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Winter (The Lunar Chronicles, #4)",
+      "author": "Marissa Meyer",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Cress (The Lunar Chronicles, #3)",
+      "author": "Marissa Meyer",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Scarlet (The Lunar Chronicles, #2)",
+      "author": "Marissa Meyer",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Cinder (The Lunar Chronicles, #1)",
+      "author": "Marissa Meyer",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Cinderella Is Dead",
+      "author": "Kalynn Bayron",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Sophie’s World",
+      "author": "Jostein Gaarder",
+      "date_read": null,
+      "country": "Norway",
+      "iso_n3": "578"
+    },
+    {
+      "title": "Wonder (Wonder, #1)",
+      "author": "R.J. Palacio",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "We Were Liars",
+      "author": "E. Lockhart",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Perks of Being a Wallflower",
+      "author": "Stephen Chbosky",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Philosophy of Physics: A Very Short Introduction",
+      "author": "David Wallace",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Black Holes: A Very Short Introduction",
+      "author": "Katherine Blundell",
+      "date_read": null,
+      "country": null,
+      "iso_n3": null
+    },
+    {
+      "title": "The Last Question",
+      "author": "Isaac Asimov",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Chrysalids",
+      "author": "John Wyndham",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Day of the Triffids",
+      "author": "John Wyndham",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Tempest",
+      "author": "William Shakespeare",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Macbeth",
+      "author": "William Shakespeare",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The War of the Worlds",
+      "author": "H.G. Wells",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Time Machine",
+      "author": "H.G. Wells",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Charlotte’s Web",
+      "author": "E.B. White",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Othello",
+      "author": "William Shakespeare",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Last Battle (Chronicles of Narnia, #7)",
+      "author": "C.S. Lewis",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Magician’s Nephew (Chronicles of Narnia, #6)",
+      "author": "C.S. Lewis",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Horse and His Boy (Chronicles of Narnia, #5)",
+      "author": "C.S. Lewis",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Silver Chair (Chronicles of Narnia, #4)",
+      "author": "C.S. Lewis",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Voyage of the Dawn Treader (Chronicles of Narnia, #3)",
+      "author": "C.S. Lewis",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Prince Caspian (Chronicles of Narnia, #2)",
+      "author": "C.S. Lewis",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Lion, the Witch and the Wardrobe (Chronicles of Narnia, #1)",
+      "author": "C.S. Lewis",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Rebecca",
+      "author": "Daphne du Maurier",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Adventures of Tom Sawyer",
+      "author": "Mark Twain",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Diary of a Young Girl",
+      "author": "Anne Frank",
+      "date_read": null,
+      "country": "Germany",
+      "iso_n3": "276"
+    },
+    {
+      "title": "The Little Prince",
+      "author": "Antoine de Saint-Exupéry",
+      "date_read": null,
+      "country": "France",
+      "iso_n3": "250"
+    },
+    {
+      "title": "A Christmas Carol",
+      "author": "Charles Dickens",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Adventures of Huckleberry Finn (Adventures of Tom and Huck, #2)",
+      "author": "Mark Twain",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Little Women (Little Women, #1)",
+      "author": "Louisa May Alcott",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "A Monster Calls",
+      "author": "Patrick Ness",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Other Queen (The Plantagenet and Tudor Novels, #16)",
+      "author": "Philippa Gregory",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Last Tudor (The Plantagenet and Tudor Novels, #15)",
+      "author": "Philippa Gregory",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Queen's Fool (The Plantagenet and Tudor Novels, #13)",
+      "author": "Philippa Gregory",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Virgin's Lover (The Plantagenet and Tudor Novels, #14)",
+      "author": "Philippa Gregory",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Other Boleyn Girl (The Plantagenet and Tudor Novels, #9)",
+      "author": "Philippa Gregory",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The White Princess (The Plantagenet and Tudor Novels, #5)",
+      "author": "Philippa Gregory",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Kingmaker's Daughter (The Plantagenet and Tudor Novels, #4)",
+      "author": "Philippa Gregory",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Red Queen (The Plantagenet and Tudor Novels, #3)",
+      "author": "Philippa Gregory",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The White Queen (The Plantagenet and Tudor Novels, #2)",
+      "author": "Philippa Gregory",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Lady of the Rivers (The Plantagenet and Tudor Novels, #1)",
+      "author": "Philippa Gregory",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Great Expectations",
+      "author": "Charles Dickens",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Lord of the Flies",
+      "author": "William Golding",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Boy in the Striped Pajamas",
+      "author": "John Boyne",
+      "date_read": null,
+      "country": "Ireland",
+      "iso_n3": "372"
+    },
+    {
+      "title": "Mockingjay (The Hunger Games, #3)",
+      "author": "Suzanne Collins",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Catching Fire (The Hunger Games, #2)",
+      "author": "Suzanne Collins",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Hunger Games (The Hunger Games, #1)",
+      "author": "Suzanne Collins",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Half Bad (The Half Bad Trilogy, #1)",
+      "author": "Sally Green",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Half Lost (The Half Bad Trilogy, #3)",
+      "author": "Sally Green",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Astrobiology: A Very Short Introduction",
+      "author": "David C. Catling",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Curious Incident of the Dog in the Night-Time",
+      "author": "Mark Haddon",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Harry Potter and the Cursed Child: Parts One and Two (Harry Potter, #8)",
+      "author": "J.K. Rowling",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Ariadne",
+      "author": "Jennifer Saint",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Hate U Give (The Hate U Give, #1)",
+      "author": "Angie Thomas",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "The Song of Achilles",
+      "author": "Madeline Miller",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "NeuroTribes: The Legacy of Autism and the Future of Neurodiversity",
+      "author": "Steve Silberman",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Detransition, Baby",
+      "author": "Torrey Peters",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    },
+    {
+      "title": "Harry Potter and the Deathly Hallows (Harry Potter, #7)",
+      "author": "J.K. Rowling",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
+      "author": "J.K. Rowling",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Harry Potter and the Order of the Phoenix (Harry Potter, #5)",
+      "author": "J.K. Rowling",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Harry Potter and the Goblet of Fire (Harry Potter, #4)",
+      "author": "J.K. Rowling",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
+      "author": "J.K. Rowling",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Harry Potter and the Chamber of Secrets (Harry Potter, #2)",
+      "author": "J.K. Rowling",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
+      "author": "J.K. Rowling",
+      "date_read": null,
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "The Holy Bible: King James Version",
+      "author": "Anonymous",
+      "date_read": null,
+      "country": "United States",
+      "iso_n3": "840"
+    }
+  ]
+}

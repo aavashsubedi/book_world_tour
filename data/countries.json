@@ -14,6 +14,11 @@
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "Akwaeke Emezi": {
+    "country": "Nigeria",
+    "iso_n3": "566",
+    "source": "wikidata"
+  },
   "Alana S. Portero": {
     "country": "Spain",
     "iso_n3": "724",
@@ -99,15 +104,35 @@
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "Angie Thomas": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "Anița Nandriș-Cudla": {
     "country": "Ukraine",
     "iso_n3": "804",
     "source": "wikidata-birthplace"
   },
+  "Anna Kavan": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Anne Carson": {
     "country": "Canada",
     "iso_n3": "124",
     "source": "wikidata"
+  },
+  "Anne Frank": {
+    "country": "Germany",
+    "iso_n3": "276",
+    "source": "wikidata"
+  },
+  "Anonymous": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
   },
   "Anthony Burgess": {
     "country": "United Kingdom",
@@ -134,6 +159,11 @@
     "iso_n3": "643",
     "source": "wikidata"
   },
+  "Arik Kershenbaum": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  },
   "Aristotle": {
     "country": "Greece",
     "iso_n3": "300",
@@ -157,6 +187,11 @@
   "Arundhati Roy": {
     "country": "India",
     "iso_n3": "356",
+    "source": "wikidata"
+  },
+  "Banana Yoshimoto": {
+    "country": "Japan",
+    "iso_n3": "392",
     "source": "wikidata"
   },
   "Ben Hutchinson": {
@@ -184,7 +219,22 @@
     "iso_n3": "250",
     "source": "wikidata"
   },
+  "Bram Stoker": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Brian Clegg": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Brian Falkner": {
+    "country": "New Zealand",
+    "iso_n3": "554",
+    "source": "wikidata"
+  },
+  "C.S. Lewis": {
     "country": "United Kingdom",
     "iso_n3": "826",
     "source": "wikidata"
@@ -212,6 +262,11 @@
   "Carol Ann Duffy": {
     "country": "United Kingdom",
     "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Cassandra Clare": {
+    "country": "United States",
+    "iso_n3": "840",
     "source": "wikidata"
   },
   "Cath Crowley": {
@@ -254,10 +309,25 @@
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "China Miéville": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Chinua Achebe": {
+    "country": "Nigeria",
+    "iso_n3": "566",
+    "source": "wikidata"
+  },
   "Christiane V. Felscherinow": {
     "country": null,
     "iso_n3": null,
     "source": "unresolved"
+  },
+  "Christine Leunens": {
+    "country": "Belgium",
+    "iso_n3": "056",
+    "source": "wikidata"
   },
   "Christopher Dell": {
     "country": "Germany",
@@ -274,6 +344,11 @@
     "iso_n3": "826",
     "source": "wikidata-birthplace"
   },
+  "Christopher Paolini": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "Chuck Palahniuk": {
     "country": "United States",
     "iso_n3": "840",
@@ -282,6 +357,11 @@
   "Cixin Liu": {
     "country": "People's Republic of China",
     "iso_n3": "156",
+    "source": "wikidata"
+  },
+  "Claudio Magris": {
+    "country": "Italy",
+    "iso_n3": "380",
     "source": "wikidata"
   },
   "Constantin Negruzzi": {
@@ -319,6 +399,11 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "Dan Brown": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "Dan C. Mihăilescu": {
     "country": "Romania",
     "iso_n3": "642",
@@ -349,6 +434,21 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "Daphne du Maurier": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "David C. Catling": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "David Levithan": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "David McRaney": {
     "country": "United States",
     "iso_n3": "840",
@@ -357,6 +457,11 @@
   "David Niven": {
     "country": "United Kingdom",
     "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "David Wallace": {
+    "country": "United States",
+    "iso_n3": "840",
     "source": "wikidata"
   },
   "Deborah Feldman": {
@@ -369,7 +474,27 @@
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "Diana Wynne Jones": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Dodie Smith": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Donna Tartt": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "E. Lockhart": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "E.B. White": {
     "country": "United States",
     "iso_n3": "840",
     "source": "wikidata"
@@ -394,6 +519,11 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "Edwin A. Abbott": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Elena Ferrante": {
     "country": "Italy",
     "iso_n3": "380",
@@ -412,6 +542,11 @@
   "Emily Kearns": {
     "country": "United Kingdom",
     "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Emmanuel Carrère": {
+    "country": "France",
+    "iso_n3": "250",
     "source": "wikidata"
   },
   "Eric de Kermel": {
@@ -447,6 +582,11 @@
   "Euripides": {
     "country": "Greece",
     "iso_n3": "300",
+    "source": "wikidata"
+  },
+  "Evie Wyld": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
     "source": "wikidata"
   },
   "F. Scott Fitzgerald": {
@@ -497,6 +637,11 @@
   "Gabriel García Márquez": {
     "country": "Colombia",
     "iso_n3": "170",
+    "source": "wikidata"
+  },
+  "Gabriela Cabezón Cámara": {
+    "country": "Argentina",
+    "iso_n3": "032",
     "source": "wikidata"
   },
   "Garabet Ibrăileanu": {
@@ -589,6 +734,11 @@
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "H.P. Lovecraft": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "Han Kang": {
     "country": "South Korea",
     "iso_n3": "410",
@@ -664,7 +814,17 @@
     "iso_n3": "642",
     "source": "wikidata"
   },
+  "Irene Solà": {
+    "country": "Spain",
+    "iso_n3": "724",
+    "source": "wikidata"
+  },
   "Irving Stone": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Isaac Asimov": {
     "country": "United States",
     "iso_n3": "840",
     "source": "wikidata"
@@ -694,15 +854,20 @@
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "J.L. Carr": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "J.N. Illouz": {
     "country": null,
     "iso_n3": null,
     "source": "unresolved"
   },
   "J.R. Moehringer": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
   },
   "J.R.R. Tolkien": {
     "country": "United Kingdom",
@@ -717,6 +882,11 @@
   "Jack London": {
     "country": "United States",
     "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Jacqueline A. Stedall": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
     "source": "wikidata"
   },
   "Jacques Le Goff": {
@@ -753,6 +923,16 @@
     "country": "France",
     "iso_n3": "250",
     "source": "wikidata"
+  },
+  "Jeff Vandermeer": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Jennifer Saint": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata-birthplace"
   },
   "Jenny Lee": {
     "country": "United States",
@@ -809,9 +989,19 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "John Wyndham": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Jojo Moyes": {
     "country": "United Kingdom",
     "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Jonas Jonasson": {
+    "country": "Sweden",
+    "iso_n3": "752",
     "source": "wikidata"
   },
   "Jonathan Safran Foer": {
@@ -834,6 +1024,11 @@
     "iso_n3": "032",
     "source": "wikidata"
   },
+  "Jostein Gaarder": {
+    "country": "Norway",
+    "iso_n3": "578",
+    "source": "wikidata"
+  },
   "José Ortega y Gasset": {
     "country": "Spain",
     "iso_n3": "724",
@@ -844,10 +1039,25 @@
     "iso_n3": null,
     "source": "unresolved"
   },
+  "Kalynn Bayron": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "Karin Serres": {
     "country": "France",
     "iso_n3": "250",
     "source": "wikidata"
+  },
+  "Kate Fox": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Katherine Blundell": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
   },
   "Katherine Mansfield": {
     "country": "New Zealand",
@@ -899,6 +1109,11 @@
     "iso_n3": "250",
     "source": "wikidata"
   },
+  "Lao Tzu": {
+    "country": "People's Republic of China",
+    "iso_n3": "156",
+    "source": "wikidata-birthplace"
+  },
   "Laurence Sterne": {
     "country": "United Kingdom",
     "iso_n3": "826",
@@ -949,6 +1164,11 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "Louisa May Alcott": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "Luca Ștefan Ouatu": {
     "country": null,
     "iso_n3": null,
@@ -957,6 +1177,11 @@
   "Lucian Blaga": {
     "country": "Austria",
     "iso_n3": "040",
+    "source": "wikidata"
+  },
+  "Lucy Coats": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
     "source": "wikidata"
   },
   "M.L. Rio": {
@@ -979,9 +1204,24 @@
     "iso_n3": "348",
     "source": "wikidata"
   },
+  "Malala Yousafzai": {
+    "country": "Pakistan",
+    "iso_n3": "586",
+    "source": "wikidata"
+  },
   "Malcolm Gladwell": {
     "country": "United Kingdom",
     "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Malorie Blackman": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Mansoura Ez-Eldin": {
+    "country": "Egypt",
+    "iso_n3": "818",
     "source": "wikidata"
   },
   "Margaret Atwood": {
@@ -1013,6 +1253,11 @@
     "country": "Peru",
     "iso_n3": "604",
     "source": "manual"
+  },
+  "Marissa Meyer": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
   },
   "Marius Chivu": {
     "country": "Romania",
@@ -1054,6 +1299,11 @@
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "Max Porter": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Maya Angelou": {
     "country": "United States",
     "iso_n3": "840",
@@ -1063,6 +1313,11 @@
     "country": "France",
     "iso_n3": "250",
     "source": "wikidata"
+  },
+  "Melanie Warner": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
   },
   "Michael Cunningham": {
     "country": "United States",
@@ -1077,6 +1332,11 @@
   "Michael Ondaatje": {
     "country": "Canada",
     "iso_n3": "124",
+    "source": "wikidata"
+  },
+  "Michelle Paver": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
     "source": "wikidata"
   },
   "Mihaela Ursa": {
@@ -1109,6 +1369,16 @@
     "iso_n3": "643",
     "source": "wikidata"
   },
+  "Mikki Kendall": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Min Jin Lee": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "Mina Loy": {
     "country": "United Kingdom",
     "iso_n3": "826",
@@ -1123,6 +1393,16 @@
     "country": "Romania",
     "iso_n3": "642",
     "source": "manual"
+  },
+  "Mitch Albom": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Molly O'Neill": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
   },
   "Nathalie Sarraute": {
     "country": "France",
@@ -1159,10 +1439,20 @@
     "iso_n3": "642",
     "source": "wikidata"
   },
+  "Ocean Vuong": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "Octavio Paz": {
     "country": "Mexico",
     "iso_n3": "484",
     "source": "wikidata-birthplace"
+  },
+  "Oliver Sacks": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
   },
   "Olivier Bourdeaut": {
     "country": "France",
@@ -1179,9 +1469,24 @@
     "iso_n3": "372",
     "source": "wikidata"
   },
+  "Pan Huiting": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  },
+  "Pat Barker": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Patrick Modiano": {
     "country": "France",
     "iso_n3": "250",
+    "source": "wikidata"
+  },
+  "Patrick Ness": {
+    "country": "United States",
+    "iso_n3": "840",
     "source": "wikidata"
   },
   "Patrick Süskind": {
@@ -1199,6 +1504,11 @@
     "iso_n3": "076",
     "source": "wikidata"
   },
+  "Penelope Lively": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Percival Everett": {
     "country": "United States",
     "iso_n3": "840",
@@ -1207,6 +1517,11 @@
   "Peter Freestone": {
     "country": "United Kingdom",
     "iso_n3": "826",
+    "source": "wikidata"
+  },
+  "Peter Godfrey-Smith": {
+    "country": "United States",
+    "iso_n3": "840",
     "source": "wikidata"
   },
   "Peter Stamm": {
@@ -1224,6 +1539,11 @@
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "Philippa Gregory": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Pierce Brown": {
     "country": "United States",
     "iso_n3": "840",
@@ -1233,6 +1553,16 @@
     "country": "Greece",
     "iso_n3": "300",
     "source": "wikidata-birthplace"
+  },
+  "R.F. Kuang": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "R.J. Palacio": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
   },
   "Radu Vancu": {
     "country": "Romania",
@@ -1269,6 +1599,11 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "Reginald Rose": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
   "René Goscinny": {
     "country": "France",
     "iso_n3": "250",
@@ -1280,6 +1615,11 @@
     "source": "wikidata"
   },
   "Rick Riordan": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Rita Mae Brown": {
     "country": "United States",
     "iso_n3": "840",
     "source": "wikidata"
@@ -1319,9 +1659,19 @@
     "iso_n3": "620",
     "source": "wikidata"
   },
+  "Sally Green": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Sally Rooney": {
     "country": "Ireland",
     "iso_n3": "372",
+    "source": "wikidata"
+  },
+  "Samantha Harvey": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
     "source": "wikidata"
   },
   "Samantha Shannon": {
@@ -1345,9 +1695,24 @@
     "source": "wikidata"
   },
   "Seneca": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "Italy",
+    "iso_n3": "380",
+    "source": "wikidata"
+  },
+  "Shehan Karunatilaka": {
+    "country": "Sri Lanka",
+    "iso_n3": "144",
+    "source": "wikidata"
+  },
+  "Shelby Van Pelt": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata-birthplace"
+  },
+  "Siburapha": {
+    "country": "Thailand",
+    "iso_n3": "764",
+    "source": "wikidata"
   },
   "Simon May": {
     "country": "United Kingdom",
@@ -1379,6 +1744,16 @@
     "iso_n3": "840",
     "source": "wikidata"
   },
+  "Steve Silberman": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Steven Isserlis": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "source": "wikidata"
+  },
   "Stéphane Mallarmé": {
     "country": "France",
     "iso_n3": "250",
@@ -1392,6 +1767,11 @@
   "Suleika Jaouad": {
     "country": "United States",
     "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Susan Hill": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
     "source": "wikidata"
   },
   "Susanna Clarke": {
@@ -1434,9 +1814,19 @@
     "iso_n3": "578",
     "source": "wikidata"
   },
+  "Tayeb Salih": {
+    "country": "Sudan",
+    "iso_n3": "729",
+    "source": "wikidata"
+  },
   "Tegan Quin": {
     "country": "Canada",
     "iso_n3": "124",
+    "source": "wikidata"
+  },
+  "Teju Cole": {
+    "country": "United States",
+    "iso_n3": "840",
     "source": "wikidata"
   },
   "Tennessee Williams": {
@@ -1455,6 +1845,11 @@
     "source": "wikidata-birthplace"
   },
   "Toni Morrison": {
+    "country": "United States",
+    "iso_n3": "840",
+    "source": "wikidata"
+  },
+  "Torrey Peters": {
     "country": "United States",
     "iso_n3": "840",
     "source": "wikidata"
@@ -1574,6 +1969,16 @@
     "iso_n3": "826",
     "source": "wikidata"
   },
+  "Xiran Jay Zhao": {
+    "country": "Canada",
+    "iso_n3": "124",
+    "source": "wikidata"
+  },
+  "Xueting C. Ni": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
+  },
   "Yasunari Kawabata": {
     "country": "Japan",
     "iso_n3": "392",
@@ -1602,6 +2007,11 @@
   "Yōko Ogawa": {
     "country": "Japan",
     "iso_n3": "392",
+    "source": "wikidata"
+  },
+  "Zadie Smith": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
     "source": "wikidata"
   },
   "Zidrou": {
