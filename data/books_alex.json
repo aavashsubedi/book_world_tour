@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T16:03:28Z",
+  "generated": "2026-08-14T21:54:17Z",
   "person": "Alex",
   "books": [
     {
@@ -27,8 +27,8 @@
       "title": "Rebarbor",
       "author": "Alexandru Monciu-Sudinski",
       "date_read": "2026-07-13",
-      "country": "Sweden",
-      "iso_n3": "752"
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Bad Habit",
@@ -111,15 +111,15 @@
       "title": "A Sentimental Journey",
       "author": "Laurence Sterne",
       "date_read": "2026-06-01",
-      "country": "United Kingdom",
-      "iso_n3": "826"
+      "country": "Ireland",
+      "iso_n3": "372"
     },
     {
       "title": "Stoner",
       "author": "John Williams",
       "date_read": "2026-05-29",
-      "country": "United States",
-      "iso_n3": "840"
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "MELANCOLIA",
@@ -496,8 +496,8 @@
       "title": "Caragiale: scrisoarea pierdută",
       "author": "Bogdan-Alexandru Stănescu",
       "date_read": "2021-06-14",
-      "country": "Romania",
-      "iso_n3": "642"
+      "country": null,
+      "iso_n3": null
     },
     {
       "title": "Mort sur le Nil (Hercule Poirot, #18)",
@@ -1084,8 +1084,8 @@
       "title": "Doamna Pylinska și secretul lui Chopin",
       "author": "Éric-Emmanuel Schmitt",
       "date_read": "2020-02-16",
-      "country": "Belgium",
-      "iso_n3": "056"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Cărţile care ne-au făcut oameni",
@@ -1126,8 +1126,8 @@
       "title": "Adam și Eva",
       "author": "Liviu Rebreanu",
       "date_read": "2020-01-24",
-      "country": "Austria",
-      "iso_n3": "040"
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Oh les beaux jours suivi de Pas moi",
@@ -1189,8 +1189,8 @@
       "title": "Hronicul și cântecul vârstelor",
       "author": "Lucian Blaga",
       "date_read": "2019-12-03",
-      "country": "Austria",
-      "iso_n3": "040"
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Poezia romana moderna de la G. Bacovia la Emil Botta",
@@ -1231,7 +1231,7 @@
       "title": "Rugă pentru Katerina Horovitzova",
       "author": "Arnošt Lustig",
       "date_read": "2019-10-12",
-      "country": "Czechia",
+      "country": "Czech Republic",
       "iso_n3": "203"
     },
     {
@@ -1336,8 +1336,8 @@
       "title": "Cei doi domni din Bruxelles",
       "author": "Éric-Emmanuel Schmitt",
       "date_read": "2019-08-15",
-      "country": "Belgium",
-      "iso_n3": "056"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Huis clos: suivi de Les Mouches",
@@ -1588,8 +1588,8 @@
       "title": "Il Principe/Principele",
       "author": "Niccolò Machiavelli",
       "date_read": "2019-03-07",
-      "country": "Italy",
-      "iso_n3": "380"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Iubirile lui Hemingway povestite de el însuși",
@@ -1616,8 +1616,8 @@
       "title": "Răzbunarea iertării",
       "author": "Éric-Emmanuel Schmitt",
       "date_read": "2019-02-24",
-      "country": "Belgium",
-      "iso_n3": "056"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Literatura Europeană și Evul Mediu Latin (Excursuri)",
@@ -1784,8 +1784,8 @@
       "title": "Milarepa",
       "author": "Éric-Emmanuel Schmitt",
       "date_read": "2018-06-01",
-      "country": "Belgium",
-      "iso_n3": "056"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Do Androids Dream of Electric Sheep?",
@@ -1840,8 +1840,8 @@
       "title": "Istoria iubirii",
       "author": "Simon May",
       "date_read": "2018-03-11",
-      "country": "United Kingdom",
-      "iso_n3": "826"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Cititorul din pestera",
@@ -1868,7 +1868,7 @@
       "title": "Procesul",
       "author": "Franz Kafka",
       "date_read": "2018-02-26",
-      "country": "Czechoslovakia",
+      "country": "Czech Republic",
       "iso_n3": "203"
     },
     {
@@ -1910,8 +1910,8 @@
       "title": "Maestrul şi Margareta",
       "author": "Mikhail Bulgakov",
       "date_read": "2018-02-04",
-      "country": "Russia",
-      "iso_n3": "643"
+      "country": "Ukraine",
+      "iso_n3": "804"
     },
     {
       "title": "Omul ilustrat",
@@ -2043,15 +2043,15 @@
       "title": "Noaptea de foc",
       "author": "Éric-Emmanuel Schmitt",
       "date_read": "2017-08-24",
-      "country": "Belgium",
-      "iso_n3": "056"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Pe când eram o operă de artă",
       "author": "Éric-Emmanuel Schmitt",
       "date_read": "2017-08-22",
-      "country": "Belgium",
-      "iso_n3": "056"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Să nu mă părăsești",
@@ -2071,7 +2071,7 @@
       "title": "Scrisoare către tata",
       "author": "Franz Kafka",
       "date_read": "2017-08-08",
-      "country": "Czechoslovakia",
+      "country": "Czech Republic",
       "iso_n3": "203"
     },
     {
@@ -2092,8 +2092,8 @@
       "title": "Otrava iubirii",
       "author": "Éric-Emmanuel Schmitt",
       "date_read": "2017-07-31",
-      "country": "Belgium",
-      "iso_n3": "056"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Fata cu cercel de perlă",
@@ -2155,8 +2155,8 @@
       "title": "Ion",
       "author": "Liviu Rebreanu",
       "date_read": "2017-07-06",
-      "country": "Austria",
-      "iso_n3": "040"
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Marele uriaș prietenos",
@@ -2204,8 +2204,8 @@
       "title": "Lolita",
       "author": "Vladimir Nabokov",
       "date_read": "2017-06-22",
-      "country": "Russia",
-      "iso_n3": "643"
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Tales of the Peculiar",
@@ -2218,8 +2218,8 @@
       "title": "Măștile fricii",
       "author": "Camelia Cavadia",
       "date_read": "2017-06-17",
-      "country": "Romania",
-      "iso_n3": "642"
+      "country": null,
+      "iso_n3": null
     },
     {
       "title": "Maestrul de ceai",
@@ -2239,8 +2239,8 @@
       "title": "Pădurea spânzuraţilor",
       "author": "Liviu Rebreanu",
       "date_read": "2017-06-13",
-      "country": "Austria",
-      "iso_n3": "040"
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Sutton",
@@ -2330,8 +2330,8 @@
       "title": "Cea mai frumoasă carte din lume",
       "author": "Éric-Emmanuel Schmitt",
       "date_read": "2017-04-03",
-      "country": "Belgium",
-      "iso_n3": "056"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Doamna Bovary",
@@ -2379,8 +2379,8 @@
       "title": "Elixirul dragostei",
       "author": "Éric-Emmanuel Schmitt",
       "date_read": "2017-03-05",
-      "country": "Belgium",
-      "iso_n3": "056"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "O mie de cocori",
@@ -2414,8 +2414,8 @@
       "title": "Monsieur Ibrahim and the Flowers of the Qur'an",
       "author": "Éric-Emmanuel Schmitt",
       "date_read": "2017-01-26",
-      "country": "Belgium",
-      "iso_n3": "056"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "Monștri: Un bestiar al bizarului",
@@ -2897,7 +2897,7 @@
       "title": "The Metamorphosis",
       "author": "Franz Kafka",
       "date_read": null,
-      "country": "Czechoslovakia",
+      "country": "Czech Republic",
       "iso_n3": "203"
     },
     {
@@ -2925,8 +2925,8 @@
       "title": "Oscar et la dame rose",
       "author": "Éric-Emmanuel Schmitt",
       "date_read": null,
-      "country": "Belgium",
-      "iso_n3": "056"
+      "country": "France",
+      "iso_n3": "250"
     },
     {
       "title": "The Little Prince",

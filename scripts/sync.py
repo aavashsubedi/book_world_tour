@@ -87,7 +87,7 @@ WRITER_OCCUPATIONS = {
 
 def http_get_json(url, headers=None, data=None, timeout=30):
     """GET/POST JSON with retry + backoff (Wikidata 429s on bursts)."""
-    for attempt, backoff in enumerate((15, 40, 70, 0)):
+    for attempt, backoff in enumerate((20, 60, 120, 240, 0)):
         try:
             req = urllib.request.Request(
                 url, data=data, headers={"User-Agent": USER_AGENT, **(headers or {})})
@@ -435,7 +435,11 @@ def resolve_authors(books, cache):
         # lookups from scratch.
         if i % 10 == 0:
             save_cache(cache)
-        time.sleep(1.5)  # be polite to the APIs
+        # Each author costs 2 requests. Pacing under the limiter is far cheaper
+        # than tripping it: one 429 burns 20-240s of backoff, and a big backfill
+        # that trips repeatedly loses whole batches of authors to exhausted
+        # retries. A slower crawl finishes sooner and more completely.
+        time.sleep(2.5)
 
 
 def main():

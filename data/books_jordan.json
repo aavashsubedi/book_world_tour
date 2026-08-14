@@ -1,13 +1,13 @@
 {
-  "generated": "2026-08-14T16:06:37Z",
+  "generated": "2026-08-14T21:58:44Z",
   "person": "Jordan",
   "books": [
     {
       "title": "Dracula",
       "author": "Bram Stoker",
       "date_read": "2026-08-03",
-      "country": "United Kingdom",
-      "iso_n3": "826"
+      "country": "Ireland",
+      "iso_n3": "372"
     },
     {
       "title": "Bullfight (Pushkin Press Classics)",
@@ -363,7 +363,7 @@
       "title": "The Trial",
       "author": "Franz Kafka",
       "date_read": "2023-08-30",
-      "country": "Czechoslovakia",
+      "country": "Czech Republic",
       "iso_n3": "203"
     },
     {
@@ -419,8 +419,8 @@
       "title": "The History of Mathematics: A Very Short Introduction",
       "author": "Jacqueline A. Stedall",
       "date_read": "2022-07-11",
-      "country": "United Kingdom",
-      "iso_n3": "826"
+      "country": null,
+      "iso_n3": null
     },
     {
       "title": "The Magic Feather Effect: The Science of Alternative Medicine and the Surprising Power of Belief",
@@ -1182,8 +1182,8 @@
       "title": "The Diary of a Young Girl",
       "author": "Anne Frank",
       "date_read": null,
-      "country": "Germany",
-      "iso_n3": "276"
+      "country": "Kingdom of the Netherlands",
+      "iso_n3": "528"
     },
     {
       "title": "The Little Prince",
@@ -1476,8 +1476,8 @@
       "title": "The Holy Bible: King James Version",
       "author": "Anonymous",
       "date_read": null,
-      "country": "United States",
-      "iso_n3": "840"
+      "country": null,
+      "iso_n3": null
     }
   ]
 }

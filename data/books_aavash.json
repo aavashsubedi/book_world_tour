@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T16:00:04Z",
+  "generated": "2026-08-14T21:25:10Z",
   "person": "Aavash",
   "books": [
     {
@@ -13,8 +13,8 @@
       "title": "Stoner",
       "author": "John Williams",
       "date_read": "2026-05-26",
-      "country": "United States",
-      "iso_n3": "840"
+      "country": "United Kingdom",
+      "iso_n3": "826"
     },
     {
       "title": "Ward No. 6",
@@ -34,8 +34,8 @@
       "title": "The Master and Margarita",
       "author": "Mikhail Bulgakov",
       "date_read": "2026-02-22",
-      "country": "Russia",
-      "iso_n3": "643"
+      "country": "Ukraine",
+      "iso_n3": "804"
     },
     {
       "title": "The Dream of a Ridiculous Man",
@@ -90,7 +90,7 @@
       "title": "The Metamorphosis",
       "author": "Franz Kafka",
       "date_read": "2025-11-16",
-      "country": "Czechoslovakia",
+      "country": "Czech Republic",
       "iso_n3": "203"
     },
     {
@@ -167,7 +167,7 @@
       "title": "Dream of the Red Chamber",
       "author": "Cao Xueqin",
       "date_read": null,
-      "country": "China",
+      "country": "People's Republic of China",
       "iso_n3": "156"
     },
     {
@@ -286,8 +286,8 @@
       "title": "Thinking, Fast and Slow",
       "author": "Daniel Kahneman",
       "date_read": null,
-      "country": "United States",
-      "iso_n3": "840"
+      "country": "Israel",
+      "iso_n3": "376"
     },
     {
       "title": "Men Are from Mars, Women Are from Venus",
