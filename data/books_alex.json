@@ -1,7 +1,14 @@
 {
-  "generated": "2026-08-14T22:04:40Z",
+  "generated": "2026-08-15T06:39:06Z",
   "person": "Alex",
   "books": [
+    {
+      "title": "La Passion selon G.H.",
+      "author": "Clarice Lispector",
+      "date_read": "2026-08-14",
+      "country": "Brazil",
+      "iso_n3": "076"
+    },
     {
       "title": "North Sun, or The Voyage of the Whaleship Esther",
       "author": "Ethan Rutherford",
@@ -2934,6 +2941,13 @@
       "date_read": null,
       "country": "France",
       "iso_n3": "250"
+    },
+    {
+      "title": "An Apprenticeship or The Book of Pleasures",
+      "author": "Clarice Lispector",
+      "date_read": null,
+      "country": "Brazil",
+      "iso_n3": "076"
     }
   ]
 }
