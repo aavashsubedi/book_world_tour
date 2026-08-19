@@ -1,7 +1,14 @@
 {
-  "generated": "2026-08-18T06:46:20Z",
+  "generated": "2026-08-19T06:46:51Z",
   "person": "Jordan",
   "books": [
+    {
+      "title": "The Dispossessed",
+      "author": "Ursula K. Le Guin",
+      "date_read": "2026-08-18",
+      "country": "United States",
+      "iso_n3": "840"
+    },
     {
       "title": "Dracula",
       "author": "Bram Stoker",
