@@ -1,7 +1,14 @@
 {
-  "generated": "2026-08-19T06:44:42Z",
+  "generated": "2026-08-20T06:46:44Z",
   "person": "Alex",
   "books": [
+    {
+      "title": "The Tartar Steppe",
+      "author": "Dino Buzzati",
+      "date_read": "2026-08-19",
+      "country": "Italy",
+      "iso_n3": "380"
+    },
     {
       "title": "La Passion selon G.H.",
       "author": "Clarice Lispector",
