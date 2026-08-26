@@ -1,7 +1,14 @@
 {
-  "generated": "2026-08-25T06:47:42Z",
+  "generated": "2026-08-26T06:50:16Z",
   "person": "Alex",
   "books": [
+    {
+      "title": "Leonora Carrington White Rabbits/Down Below (Penguin Modern Classics) /anglais",
+      "author": "carrington leonora",
+      "date_read": "2026-08-25",
+      "country": "Mexico",
+      "iso_n3": "484"
+    },
     {
       "title": "The Tartar Steppe",
       "author": "Dino Buzzati",
