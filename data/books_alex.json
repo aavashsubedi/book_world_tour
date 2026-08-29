@@ -1,7 +1,14 @@
 {
-  "generated": "2026-08-28T18:17:07Z",
+  "generated": "2026-08-29T12:24:36Z",
   "person": "Alex",
   "books": [
+    {
+      "title": "May We Feed the King",
+      "author": "Rebecca Perry",
+      "date_read": "2026-08-29",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
     {
       "title": "Leonora Carrington White Rabbits/Down Below (Penguin Modern Classics) /anglais",
       "author": "carrington leonora",
