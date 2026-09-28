@@ -1,7 +1,14 @@
 {
-  "generated": "2026-09-27T11:33:08Z",
+  "generated": "2026-09-28T13:05:15Z",
   "person": "Jordan",
   "books": [
+    {
+      "title": "A Long Petal of the Sea",
+      "author": "Isabel Allende",
+      "date_read": "2026-09-27",
+      "country": "United States",
+      "iso_n3": "840"
+    },
     {
       "title": "The Dispossessed",
       "author": "Ursula K. Le Guin",

@@ -1,7 +1,21 @@
 {
-  "generated": "2026-09-27T11:31:03Z",
+  "generated": "2026-09-28T13:03:08Z",
   "person": "Alex",
   "books": [
+    {
+      "title": "Night and Day",
+      "author": "Virginia Woolf",
+      "date_read": "2026-09-27",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Une image peut-être vraie. Alix Cléo Roubaud",
+      "author": "Hélène Giannecchini",
+      "date_read": "2026-09-27",
+      "country": "France",
+      "iso_n3": "250"
+    },
     {
       "title": "May We Feed the King",
       "author": "Rebecca Perry",

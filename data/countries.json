@@ -963,6 +963,12 @@
     "qid": "Q92775",
     "source": "wikidata"
   },
+  "Hélène Giannecchini": {
+    "country": "France",
+    "iso_n3": "250",
+    "qid": "Q55597249",
+    "source": "wikidata"
+  },
   "Ioan Slavici": {
     "country": "Romania",
     "iso_n3": "642",
@@ -997,6 +1003,12 @@
     "country": "United States",
     "iso_n3": "840",
     "qid": "Q34981",
+    "source": "wikidata"
+  },
+  "Isabel Allende": {
+    "country": "United States",
+    "iso_n3": "840",
+    "qid": "Q83566",
     "source": "wikidata"
   },
   "Ismail Kadare": {
