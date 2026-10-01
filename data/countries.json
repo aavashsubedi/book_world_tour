@@ -1363,6 +1363,12 @@
     "qid": "Q7243",
     "source": "wikidata-birthplace"
   },
+  "Leonora Carrington": {
+    "country": "Mexico",
+    "iso_n3": "484",
+    "qid": "Q233207",
+    "source": "wikidata"
+  },
   "Lev Grossman": {
     "country": "United States",
     "iso_n3": "840",
