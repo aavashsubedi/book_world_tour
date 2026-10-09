@@ -1,7 +1,21 @@
 {
-  "generated": "2026-10-08T12:55:38Z",
+  "generated": "2026-10-09T12:41:21Z",
   "person": "Alex",
   "books": [
+    {
+      "title": "Crossing the Wine-Dark Sea: Journeys Through Ancient Literature",
+      "author": "Emily Wilson",
+      "date_read": "2026-10-09",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
+    {
+      "title": "Aliène",
+      "author": "Phœbe Hadjimarkos Clarke",
+      "date_read": "2026-10-09",
+      "country": null,
+      "iso_n3": null
+    },
     {
       "title": "Night and Day",
       "author": "Virginia Woolf",

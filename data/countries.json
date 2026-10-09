@@ -658,6 +658,12 @@
     "qid": "Q113736329",
     "source": "wikidata"
   },
+  "Emily Wilson": {
+    "country": "United Kingdom",
+    "iso_n3": "826",
+    "qid": "Q5372429",
+    "source": "wikidata"
+  },
   "Emmanuel Carrère": {
     "country": "France",
     "iso_n3": "250",
@@ -1860,6 +1866,11 @@
     "iso_n3": "826",
     "qid": "Q240212",
     "source": "wikidata"
+  },
+  "Phœbe Hadjimarkos Clarke": {
+    "country": null,
+    "iso_n3": null,
+    "source": "unresolved"
   },
   "Pierce Brown": {
     "country": "United States",
