@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T10:58:06Z",
+  "generated": "2026-10-16T10:49:06Z",
   "person": "Alex",
   "books": [
     {
@@ -279,8 +279,8 @@
       "title": "Kick the Latch",
       "author": "Kathryn Scanlan",
       "date_read": "2025-04-24",
-      "country": null,
-      "iso_n3": null
+      "country": "United States",
+      "iso_n3": "840"
     },
     {
       "title": "Magnolia",

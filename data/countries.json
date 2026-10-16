@@ -1306,9 +1306,10 @@
     "source": "wikidata"
   },
   "Kathryn Scanlan": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "United States",
+    "iso_n3": "840",
+    "qid": "Q132014848",
+    "source": "wikidata"
   },
   "Kaya de Vos": {
     "country": null,
