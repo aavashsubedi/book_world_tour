@@ -1,7 +1,14 @@
 {
-  "generated": "2026-10-20T11:01:38Z",
+  "generated": "2026-10-21T11:17:19Z",
   "person": "Alex",
   "books": [
+    {
+      "title": "Fruit Fly",
+      "author": "Josh Silver",
+      "date_read": "2026-10-20",
+      "country": "United Kingdom",
+      "iso_n3": "826"
+    },
     {
       "title": "Crossing the Wine-Dark Sea: Journeys Through Ancient Literature",
       "author": "Emily Wilson",

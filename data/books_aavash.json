@@ -1,7 +1,14 @@
 {
-  "generated": "2026-10-20T10:57:32Z",
+  "generated": "2026-10-21T11:13:10Z",
   "person": "Aavash",
   "books": [
+    {
+      "title": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "date_read": "2026-10-20",
+      "country": "United States",
+      "iso_n3": "840"
+    },
     {
       "title": "The Odyssey",
       "author": "Homer",
