@@ -1,70 +1,7 @@
 {
-  "generated": "2026-10-27T11:42:06Z",
+  "generated": "2026-10-28T12:12:13Z",
   "person": "Alex",
   "books": [
-    {
-      "title": "Fruit Fly",
-      "author": "Josh Silver",
-      "date_read": "2026-10-20",
-      "country": "United Kingdom",
-      "iso_n3": "826"
-    },
-    {
-      "title": "Crossing the Wine-Dark Sea: Journeys Through Ancient Literature",
-      "author": "Emily Wilson",
-      "date_read": "2026-10-09",
-      "country": "United Kingdom",
-      "iso_n3": "826"
-    },
-    {
-      "title": "Aliène",
-      "author": "Phœbe Hadjimarkos Clarke",
-      "date_read": "2026-10-09",
-      "country": null,
-      "iso_n3": null
-    },
-    {
-      "title": "Night and Day",
-      "author": "Virginia Woolf",
-      "date_read": "2026-09-27",
-      "country": "United Kingdom",
-      "iso_n3": "826"
-    },
-    {
-      "title": "Une image peut-être vraie. Alix Cléo Roubaud",
-      "author": "Hélène Giannecchini",
-      "date_read": "2026-09-27",
-      "country": "France",
-      "iso_n3": "250"
-    },
-    {
-      "title": "May We Feed the King",
-      "author": "Rebecca Perry",
-      "date_read": "2026-08-29",
-      "country": "United Kingdom",
-      "iso_n3": "826"
-    },
-    {
-      "title": "White Rabbits/Down Below",
-      "author": "Leonora Carrington",
-      "date_read": "2026-08-25",
-      "country": "Mexico",
-      "iso_n3": "484"
-    },
-    {
-      "title": "The Tartar Steppe",
-      "author": "Dino Buzzati",
-      "date_read": "2026-08-19",
-      "country": "Italy",
-      "iso_n3": "380"
-    },
-    {
-      "title": "La Passion selon G.H.",
-      "author": "Clarice Lispector",
-      "date_read": "2026-08-14",
-      "country": "Brazil",
-      "iso_n3": "076"
-    },
     {
       "title": "North Sun, or The Voyage of the Whaleship Esther",
       "author": "Ethan Rutherford",
@@ -2997,13 +2934,6 @@
       "date_read": null,
       "country": "France",
       "iso_n3": "250"
-    },
-    {
-      "title": "An Apprenticeship or The Book of Pleasures",
-      "author": "Clarice Lispector",
-      "date_read": null,
-      "country": "Brazil",
-      "iso_n3": "076"
     }
   ]
 }

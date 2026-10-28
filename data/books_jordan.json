@@ -1,21 +1,7 @@
 {
-  "generated": "2026-10-27T11:44:10Z",
+  "generated": "2026-10-28T12:14:13Z",
   "person": "Jordan",
   "books": [
-    {
-      "title": "A Long Petal of the Sea",
-      "author": "Isabel Allende",
-      "date_read": "2026-09-27",
-      "country": "United States",
-      "iso_n3": "840"
-    },
-    {
-      "title": "The Dispossessed",
-      "author": "Ursula K. Le Guin",
-      "date_read": "2026-08-18",
-      "country": "United States",
-      "iso_n3": "840"
-    },
     {
       "title": "Dracula",
       "author": "Bram Stoker",
@@ -1482,20 +1468,6 @@
     {
       "title": "Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
       "author": "J.K. Rowling",
-      "date_read": null,
-      "country": "United Kingdom",
-      "iso_n3": "826"
-    },
-    {
-      "title": "The Holy Bible: King James Version",
-      "author": "Anonymous",
-      "date_read": null,
-      "country": null,
-      "iso_n3": null
-    },
-    {
-      "title": "Frankenstein",
-      "author": "Mary Wollstonecraft Shelley",
       "date_read": null,
       "country": "United Kingdom",
       "iso_n3": "826"
