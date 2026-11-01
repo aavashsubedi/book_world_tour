@@ -249,9 +249,10 @@
     "source": "wikidata"
   },
   "Bogdan-Alexandru Stănescu": {
-    "country": null,
-    "iso_n3": null,
-    "source": "unresolved"
+    "country": "Romania",
+    "iso_n3": "642",
+    "qid": "Q118950149",
+    "source": "wikidata"
   },
   "Boris Vian": {
     "country": "France",

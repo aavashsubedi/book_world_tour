@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31T11:46:49Z",
+  "generated": "2026-11-01T12:45:13Z",
   "person": "Alex",
   "books": [
     {
@@ -496,8 +496,8 @@
       "title": "Caragiale: scrisoarea pierdută",
       "author": "Bogdan-Alexandru Stănescu",
       "date_read": "2021-06-14",
-      "country": null,
-      "iso_n3": null
+      "country": "Romania",
+      "iso_n3": "642"
     },
     {
       "title": "Mort sur le Nil (Hercule Poirot, #18)",
